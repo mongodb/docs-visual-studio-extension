@@ -1,4 +1,4 @@
-name = "visual-studio-extension"
+name = "visualstudioextension"
 title = "Visual Studio Extension"
 
 [constants]
