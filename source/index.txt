@@ -1,1 +1,29 @@
-Test Build
+.. _visual-studio-extension:
+
+.. _visual-studio-extension-landing:
+
+===============================
+{+name+}
+===============================
+
+.. default-domain:: mongodb
+
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   Builders </builders>
+   LINQ </linq>
+
+Overview
+--------
+
+The `{+name+} <{+home-page+}>`__ is an add-on for the Visual Studio IDE
+that shows you how MongoDB C# driver methods translate into MQL.
+
+This guide provides information on available configuration options and
+examples to help you complete your implementation in the following
+sections:
+
+- :doc:`Builders </builders>`
+- :doc:`LINQ </linq>`
