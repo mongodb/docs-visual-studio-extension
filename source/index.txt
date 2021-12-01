@@ -19,7 +19,15 @@ Overview
 --------
 
 The `{+name+} <{+home-page+}>`__ is an add-on for the Visual Studio IDE
-that shows you how MongoDB C# driver methods translate into MQL.
+that shows you how your MongoDB C# driver code translates into 
+the {+query-api+}.
+
+The {+name+} can translate the following types of C# expressions into
+{+query-api+}:
+
+- `Builders <{+csharp-docs+}reference/driver/definitions/>`__
+- `LINQ <{+csharp-docs+}reference/driver/crud/linq/>`__
+- `LINQ3 <{+csharp-docs+}reference/driver/crud/linq3/>`__
 
 This guide provides information on available configuration options and
 examples to help you complete your implementation in the following
@@ -27,3 +35,5 @@ sections:
 
 - :doc:`Builders </builders>`
 - :doc:`LINQ </linq>`
+
+
