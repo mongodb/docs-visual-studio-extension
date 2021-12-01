@@ -11,3 +11,7 @@ query-api = "MongoDB Query API"
 
 csharp-version = 2.14
 csharp-docs = "https://mongodb.github.io/mongo-csharp-driver/{+csharp-version+}/"
+
+driver-long = "MongoDB .NET driver"
+driver = ".NET driver"
+driver-short = "driver"
