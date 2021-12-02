@@ -45,7 +45,7 @@ Read the following sections of this guide to learn how to install the
 - :doc:`Analyze your LINQ expressions </linq>`
 - :doc:`Configure the extension </configuration>`
 
-To view answers to frequently asked questions, see the :doc:`FAQ </faq` page.
+To view answers to frequently asked questions, see the :doc:`FAQ </faq>` page.
 
 .. important:: Telemetry
    
