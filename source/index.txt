@@ -3,7 +3,7 @@
 .. _visual-studio-extension-landing:
 
 ===============================
-{+name+}
+{+extension+}
 ===============================
 
 .. default-domain:: mongodb
