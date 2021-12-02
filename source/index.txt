@@ -31,14 +31,15 @@ The {+name+} can analyze the following groups of {+driver+} expressions:
 - `LINQ <{+csharp-docs+}reference/driver/crud/linq/>`__
 - `LINQ3 <{+csharp-docs+}reference/driver/crud/linq3/>`__
 
-Use the {+name+} to learn the following about your code:
+Use the {+name+} to answer the following questions about your code:
 
-- How does your code translate into the {+query-api+}
-- Does your code include an unsupported LINQ or builder expression
+- How does your code translate into the {+query-api+}?
+- Does your code include an unsupported LINQ or builder expression?
 
-This guide provides installation instructions and FEATURES:
+Read the following sections of this guide to learn how to install the
+{+name+}, how to use its features, and how to configure it:
 
-- :doc:`Installation </install>`
-- :doc:`Builders </builders>`
-- :doc:`LINQ </linq>`
-- :doc:`Configuration </configuration>`
+- :doc:`Install the Extension </install>`
+- :doc:`Analyze your Builder Expressions </builders>`
+- :doc:`Analyze your LINQ Expressions </linq>`
+- :doc:`Configure the Extension </configuration>`
