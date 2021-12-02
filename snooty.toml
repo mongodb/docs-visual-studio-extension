@@ -6,9 +6,8 @@ extension = "MongoDB Visual Studio Extension"
 extension-home-page = "https://github.com/BorisDog/mongo-csharp-analyzer"
 query-api = "MongoDB Query API"
 
-csharp-version = 2.14
-csharp-docs = "https://mongodb.github.io/mongo-csharp-driver/{+csharp-version+}/"
-
 driver-long = "MongoDB .NET driver"
 driver = ".NET driver"
 driver-short = "driver"
+driver-version = 2.14
+driver-docs = "https://mongodb.github.io/mongo-csharp-driver/{+driver-version+}/"

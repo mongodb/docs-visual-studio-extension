@@ -29,9 +29,9 @@ code without running it.
 
 The {+extension+} can analyze the following groups of {+driver+} expressions:
 
-- `Builders <{+csharp-docs+}reference/driver/definitions/>`__
-- `LINQ <{+csharp-docs+}reference/driver/crud/linq/>`__
-- `LINQ3 <{+csharp-docs+}reference/driver/crud/linq3/>`__
+- `Builders <{+driver-docs+}reference/driver/definitions/>`__
+- `LINQ <{+driver-docs+}reference/driver/crud/linq/>`__
+- `LINQ3 <{+driver-docs+}reference/driver/crud/linq3/>`__
 
 Use the {+extension+} to answer the following questions about your code:
 
