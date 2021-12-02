@@ -43,3 +43,14 @@ Read the following sections of this guide to learn how to install the
 - :doc:`Analyze your builder expressions </builders>`
 - :doc:`Analyze your LINQ expressions </linq>`
 - :doc:`Configure the extension </configuration>`
+
+.. important:: Telemetry
+   
+   When the {+name+} analyzes your source code, the extension
+   sends the following information to MongoDB:
+
+   - Your .NET Version installed in Visual Studio
+   - Your Operating System
+   - TODO: Make sure this list is exhaustive
+
+   To disable this feature, TODO: Include how to disable.
