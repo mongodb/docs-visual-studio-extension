@@ -2,9 +2,6 @@ name = "visual-studio-extension"
 title = "Visual Studio Extension"
 
 [constants]
-version = 1.0
-full-version = "{+version+}.0"
-
 extension = "MongoDB Visual Studio Extension"
 extension-home-page = "https://github.com/BorisDog/mongo-csharp-analyzer"
 query-api = "MongoDB Query API"
