@@ -39,7 +39,7 @@ Use the {+name+} to answer the following questions about your code:
 Read the following sections of this guide to learn how to install the
 {+name+}, how to use its features, and how to configure it:
 
-- :doc:`Install the Extension </install>`
-- :doc:`Analyze your Builder Expressions </builders>`
-- :doc:`Analyze your LINQ Expressions </linq>`
-- :doc:`Configure the Extension </configuration>`
+- :doc:`Install the extension </install>`
+- :doc:`Analyze your builder expressions </builders>`
+- :doc:`Analyze your LINQ expressions </linq>`
+- :doc:`Configure the extension </configuration>`
