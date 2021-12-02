@@ -3,7 +3,7 @@
 .. _visual-studio-extension-landing:
 
 ===============================
-{+extension+}
+{+product+}
 ===============================
 
 .. default-domain:: mongodb
@@ -22,24 +22,24 @@
 Overview
 --------
 
-The `{+extension+} <{+extension-home-page+}>`__ is an add-on for the Visual Studio IDE
+The `{+product+} <{+product-home-page+}>`__ is an add-on for the Visual Studio IDE
 that uses **static analysis** to help you understand your {+driver-long+} 
 code. Static analysis is a technique where software inspects your
 code without running it.
 
-The {+extension+} can analyze the following groups of {+driver+} expressions:
+The {+product+} can analyze the following groups of {+driver-short+} expressions:
 
 - `Builders <{+driver-docs+}reference/driver/definitions/>`__
 - `LINQ <{+driver-docs+}reference/driver/crud/linq/>`__
 - `LINQ3 <{+driver-docs+}reference/driver/crud/linq3/>`__
 
-Use the {+extension+} to answer the following questions about your code:
+Use the {+product+} to answer the following questions about your code:
 
 - How does your code translate into the {+query-api+}?
 - Does your code include an unsupported LINQ or builder expression?
 
 Read the following sections of this guide to learn how to install the
-{+extension+}, how to use its features, and how to configure it:
+{+product+}, how to use its features, and how to configure it:
 
 - :doc:`Install the extension </install>`
 - :doc:`Analyze your builder expressions </builders>`
@@ -53,7 +53,7 @@ see the :doc:`What's New <whats-new>` page.
 
 .. important:: Telemetry
    
-   When the {+extension+} analyzes your source code, the extension
+   When the {+product+} analyzes your source code, the extension
    sends the following information to MongoDB:
 
    - Your .NET version installed in Visual Studio
