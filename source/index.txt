@@ -17,7 +17,7 @@
    LINQ </linq>
    Configuration </configuration>
    FAQ </faq>
-   Whats New </whats-new>
+   What's New </whats-new>
 
 Overview
 --------
@@ -47,6 +47,9 @@ Read the following sections of this guide to learn how to install the
 - :doc:`Configure the extension </configuration>`
 
 To view answers to frequently asked questions, see the :doc:`FAQ </faq>` page.
+
+To view the differences between versions of the extension,
+see the :doc:`What's New <whats-new>` page. 
 
 .. important:: Telemetry
    
