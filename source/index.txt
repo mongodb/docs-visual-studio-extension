@@ -17,6 +17,7 @@
    LINQ </linq>
    Configuration </configuration>
    FAQ </faq>
+   Whats New </whats-new>
 
 Overview
 --------
