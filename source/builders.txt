@@ -1,1 +1,19 @@
-TODO: write
+.. _visual-studio-extension-builders:
+
+================
+Analyze Builders
+================
+
+
+Overview
+--------
+
+Learn how to use the {+product+} to help you understand your **builder**
+expressions translate into the {+query-api+}. A builder is a class
+provided by the {+driver-long+} to help you construct
+`BSON <https://bsonspec.org/>`__ objects.
+
+If you would rather learn how to analyze `LINQ <>` expressions, see the
+:doc:`LINQ </linq>` page. 
+
+
