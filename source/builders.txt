@@ -1,19 +1,24 @@
 .. _visual-studio-extension-builders:
 
-================
-Analyze Builders
-================
-
+=================
+Analyze Your Code
+=================
 
 Overview
 --------
 
-Learn how to use the {+product+} to help you understand your **builder**
-expressions translate into the {+query-api+}. A builder is a class
-provided by the {+driver-long+} to help you construct
+Learn how to use **static analysis** to analyze your code with the {+product+}.
+Static analysis is a technique where software inspects your
+code without running it.
+
+The {+product+} can analyze **builder** and **LINQ** expressions.
+
+A builder is a class provided by the {+driver-long+} to help you construct
 `BSON <https://bsonspec.org/>`__ objects.
 
-If you would rather learn how to analyze `LINQ <>` expressions, see the
-:doc:`LINQ </linq>` page. 
+A LINQ expression is a 
+
+If you would rather learn how to analyze LINQ expressions, see the
+:doc:`LINQ </linq>` page.
 
 
