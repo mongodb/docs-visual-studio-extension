@@ -47,14 +47,3 @@ To view answers to frequently asked questions, see the :doc:`FAQ </faq>` page.
 
 To view the differences between versions of the extension,
 see the :doc:`What's New <whats-new>` page. 
-
-.. important:: Telemetry
-   
-   When the {+product+} analyzes your source code, the extension
-   sends the following information to MongoDB:
-
-   - Your .NET version installed in Visual Studio
-   - Your operating system
-   - TODO: Make sure this list is exhaustive
-
-   To disable this feature, TODO: Include how to disable.
