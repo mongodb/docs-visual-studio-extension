@@ -11,14 +11,14 @@ Learn how to use **static analysis** to analyze your code with the {+product+}.
 Static analysis is a technique where software inspects your
 code without running it.
 
-The {+product+} can analyze **builder** and **LINQ** expressions.
+The {+product+} can analyze **builder** and **Language Integrated Query (LINQ)** expressions.
 
 A builder is a class provided by the {+driver-long+} to help you construct
 `BSON <https://bsonspec.org/>`__ objects. The {+product+} can show you how
 your builder expressions translate into the {+query-api+}.
 
-Language Integrated Query (LINQ) is a query syntax included in the C# language. The {+driver-short+}
-lets you write aggregation pipelines in LINQ. The product can show you the following
+LINQ is a query syntax included in the C# language. The {+driver-short+}
+lets you write aggregation pipelines in LINQ. The {+product+} can show you the following
 about your LINQ expressions:
 
 - How your LINQ expression translates into the {+query-api+}
@@ -41,8 +41,7 @@ To learn more about aggregation pipelines, see
 Analyze Builders
 ----------------
 
-
-To analyze your builder expression, perform the following actions:
+To analyze your builder expressions, perform the following actions:
 
 1. Install the {+product+} as described in the :doc:`Install </install>`
    guide.
@@ -83,7 +82,7 @@ and its corresponding {+query-api+} expression:
                       Builders<Movie>.Filter.Regex(m => m.Score, titleSearchTerm);
 
    .. tab:: {+query-api+}
-      :tabid: query-api
+      :tabid: query-api-builders
 
       .. code-block:: json
 
@@ -96,7 +95,59 @@ and its corresponding {+query-api+} expression:
 Analyze LINQ
 ------------
 
-TODO
+To analyze your LINQ expressions, perform the following actions:
+
+1. Install the {+product+} as described in the :doc:`Install </install>`
+   guide.
+2. Write a LINQ expression with the {+driver-short+}
+3. Move your mouse over the :guilabel:`...` annotation beneath the first
+   method of your builder expression to display an information mesage.
+
+.. tabs::
+
+   .. tab:: No Message
+      :tabid: no-message
+
+      .. figure:: /includes/images/linq.png
+         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
+
+   .. tab:: Message
+      :tabid: message
+
+      .. figure:: /includes/images/linq-popup.png
+         :alt: Screenshot of builder expression in visual studio with information message displayed.
+
+
+Click the following tabs to see an example of a LINQ expression
+and its corresponding {+query-api+} expression:
+
+.. tabs::
+
+   .. tab:: LINQ
+      :tabid: linq
+
+      .. code-block:: csharp
+
+         var movies = await moviesCollection.Where(m =>
+             m.Genre == genre &&
+             m.Score >= minScore &&
+             m.Title.Contains(titleSearchTerm)).
+             OrderBy(m => m.Score).
+             ToListAsync();
+
+
+   .. tab:: {+query-api+}
+      :tabid: query-api-linq
+
+      .. code-block:: json
+
+         [{ "$match" : { 
+              "Genre" : genre, 
+              "Score" : { "$gte" : minScore }, 
+              "Title" : /titleSearchTerm/s }
+           }, 
+           { "$sort" : { "Score" : 1 } }]
+
 
 LINQ3
 ~~~~~
