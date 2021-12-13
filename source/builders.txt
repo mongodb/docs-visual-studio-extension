@@ -4,6 +4,14 @@
 Analyze Your Code
 =================
 
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
 Overview
 --------
 
@@ -21,8 +29,8 @@ LINQ is a query syntax included in the C# language. The {+driver-short+}
 lets you write aggregation pipelines in LINQ. The {+product+} can show you the following
 about your LINQ expressions:
 
-- How your LINQ expression translates into the {+query-api+}
-- If your LINQ expression contains an unsupported operator
+- How your LINQ expressions translate into the {+query-api+}
+- If your LINQ expressions contain an unsupported operator
 
 To learn more about builders, see 
 `Builders <{+driver-docs+}reference/driver/definitions/>`__ in the
