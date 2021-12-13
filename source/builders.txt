@@ -22,15 +22,10 @@ code without running it.
 The {+product+} can analyze **builder** and **Language Integrated Query (LINQ)** expressions.
 
 A builder is a class provided by the {+driver-long+} to help you construct
-`BSON <https://bsonspec.org/>`__ objects. The {+product+} can show you how
-your builder expressions translate into the {+query-api+}.
+`BSON <https://bsonspec.org/>`__ objects.
 
 LINQ is a query syntax included in the C# language. The {+driver-short+}
-lets you write aggregation pipelines in LINQ. The {+product+} can show you the following
-about your LINQ expressions:
-
-- How your LINQ expressions translate into the {+query-api+}
-- If your LINQ expressions contain an unsupported operator
+can translate a subset of LINQ expressions into MongoDB aggregation pipelines.
 
 To learn more about builders, see 
 `Builders <{+driver-docs+}reference/driver/definitions/>`__ in the
@@ -54,7 +49,7 @@ Click the following tabs to see a builder expression with and without the
 information message displayed:
 
 Click the following tabs to see an example of a builder expression
-and its corresponding {+query-api+} expression:
+and its corresponding {+query-api+} translation:
 
 .. tabs::
 
@@ -112,9 +107,14 @@ TODO
 Analyze LINQ
 ------------
 
-Use the {+product+} to translate your LINQ expressions into the {+query-api+}.
+Use the {+product+} to learn the following
+about your LINQ expressions:
+
+- How your LINQ expressions translate into the {+query-api+}
+- If your LINQ expressions contain an unsupported operator
+
 Click the following tabs to see an example of a LINQ expression
-and its corresponding {+query-api+} expression:
+and its corresponding {+query-api+} translation:
 
 .. tabs::
 
@@ -180,4 +180,6 @@ TODO
 LINQ3
 ~~~~~
 
-TODO
+To analyze a LINQ3 expression, configure the {+product+} to use the LINQ3
+provider. To learn how to configure your LINQ provider, see the
+:doc:`configuration </configuration>` guide.
