@@ -16,9 +16,34 @@ The {+product+} can analyze **builder** and **LINQ** expressions.
 A builder is a class provided by the {+driver-long+} to help you construct
 `BSON <https://bsonspec.org/>`__ objects.
 
-A LINQ expression is a 
+Language Integrated Query (LINQ) is a query syntax included in the C# language. The {+driver-short+}
+lets you write aggregation pipelines in LINQ.
 
-If you would rather learn how to analyze LINQ expressions, see the
-:doc:`LINQ </linq>` page.
+To learn more about builders, see 
+`Builders <{+driver-docs+}reference/driver/definitions/>`__ in the
+{+driver-short+} documentation.
 
+To learn more about LINQ, see the following resources:
 
+- `LINQ <{+driver-docs+}reference/driver/crud/linq/>`__ in the {+driver-short+}
+  documentation
+- `LINQ <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/>`__
+   in the Microsoft C# guide
+
+To learn more about aggregation pipelines, see
+:manual:`Aggregation </aggregation/>` in the MongoDB manual.
+
+Analyze Builders
+----------------
+
+TODO
+
+Analyze LINQ
+------------
+
+TODO
+
+LINQ3
+~~~~~
+
+TODO
