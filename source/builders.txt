@@ -41,31 +41,9 @@ To learn more about aggregation pipelines, see
 Analyze Builders
 ----------------
 
-To analyze your builder expressions, perform the following actions:
-
-1. Install the {+product+} as described in the :doc:`Install </install>`
-   guide.
-2. Write a builder expression with the {+driver-short+}
-3. Move your mouse over the :guilabel:`...` annotation beneath the first
-   method of your builder expression to display an information mesage.
-   
+Use the {+product+} to translate your builder expressions into the {+query-api+}.
 Click the following tabs to see a builder expression with and without the
 information message displayed:
-
-.. tabs::
-
-   .. tab:: No Message
-      :tabid: no-message
-
-      .. figure:: /includes/images/builder.png
-         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
-
-   .. tab:: Message
-      :tabid: message
-
-      .. figure:: /includes/images/builder-popup-photoshop.png
-         :alt: Screenshot of builder expression in visual studio with information message displayed.
-
 
 Click the following tabs to see an example of a builder expression
 and its corresponding {+query-api+} expression:
@@ -92,32 +70,41 @@ and its corresponding {+query-api+} expression:
              { "Score": /titleSearchTerm/ } ]
          }
 
-Analyze LINQ
-------------
+Analyze Builders in Visual Studio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To analyze your LINQ expressions, perform the following actions:
+To analyze your builder expressions in Visual Studio, perform the following actions:
 
 1. Install the {+product+} as described in the :doc:`Install </install>`
    guide.
-2. Write a LINQ expression with the {+driver-short+}
+2. Write a builder expression with the {+driver-short+}
 3. Move your mouse over the :guilabel:`...` annotation beneath the first
    method of your builder expression to display an information mesage.
-
+         
 .. tabs::
 
    .. tab:: No Message
       :tabid: no-message
 
-      .. figure:: /includes/images/linq.png
+      .. figure:: /includes/images/builder.png
          :alt: Screenshot of builder expression in visual studio with elipsis annotation.
 
    .. tab:: Message
       :tabid: message
 
-      .. figure:: /includes/images/linq-popup.png
+      .. figure:: /includes/images/builder-popup-photoshop.png
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
+Analyze Builders from the Command Line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+TODO
+
+
+Analyze LINQ
+------------
+
+Use the {+product+} to translate your LINQ expressions into the {+query-api+}.
 Click the following tabs to see an example of a LINQ expression
 and its corresponding {+query-api+} expression:
 
@@ -147,6 +134,39 @@ and its corresponding {+query-api+} expression:
               "Title" : /titleSearchTerm/s }
            }, 
            { "$sort" : { "Score" : 1 } }]
+
+Analyze LINQ in Visual Studio
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To analyze your LINQ expressions in Visual Studio, perform the following actions:
+
+1. Install the {+product+} as described in the :doc:`Install </install>`
+   guide.
+2. Write a LINQ expression with the {+driver-short+}
+3. Move your mouse over the :guilabel:`...` annotation beneath the first
+   method of your builder expression to display an information mesage.
+
+Click the following tabs to see an example of a LINQ expression
+and its corresponding {+query-api+} expression:
+
+.. tabs::
+
+   .. tab:: No Message
+      :tabid: no-message
+
+      .. figure:: /includes/images/linq.png
+         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
+
+   .. tab:: Message
+      :tabid: message
+
+      .. figure:: /includes/images/linq-popup.png
+         :alt: Screenshot of builder expression in visual studio with information message displayed.
+
+Analyze LINQ from the Command Line
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+TODO
 
 
 LINQ3
