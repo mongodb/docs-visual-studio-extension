@@ -14,10 +14,15 @@ code without running it.
 The {+product+} can analyze **builder** and **LINQ** expressions.
 
 A builder is a class provided by the {+driver-long+} to help you construct
-`BSON <https://bsonspec.org/>`__ objects.
+`BSON <https://bsonspec.org/>`__ objects. The {+product+} can show you how
+your builder expressions translate into the {+query-api+}.
 
 Language Integrated Query (LINQ) is a query syntax included in the C# language. The {+driver-short+}
-lets you write aggregation pipelines in LINQ.
+lets you write aggregation pipelines in LINQ. The product can show you the following
+about your LINQ expressions:
+
+- How your LINQ expression translates into the {+query-api+}
+- If your LINQ expression contains an unsupported operator
 
 To learn more about builders, see 
 `Builders <{+driver-docs+}reference/driver/definitions/>`__ in the
@@ -28,7 +33,7 @@ To learn more about LINQ, see the following resources:
 - `LINQ <{+driver-docs+}reference/driver/crud/linq/>`__ in the {+driver-short+}
   documentation
 - `LINQ <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/>`__
-   in the Microsoft C# guide
+  in the Microsoft C# guide
 
 To learn more about aggregation pipelines, see
 :manual:`Aggregation </aggregation/>` in the MongoDB manual.
@@ -36,7 +41,57 @@ To learn more about aggregation pipelines, see
 Analyze Builders
 ----------------
 
-TODO
+
+To analyze your builder expression, perform the following actions:
+
+1. Install the {+product+} as described in the :doc:`Install </install>`
+   guide.
+2. Write a builder expression with the {+driver-short+}
+3. Move your mouse over the :guilabel:`...` annotation beneath the first
+   method of your builder expression to display an information mesage.
+   
+Click the following tabs to see a builder expression with and without the
+information message displayed:
+
+.. tabs::
+
+   .. tab:: No Message
+      :tabid: no-message
+
+      .. figure:: /includes/images/builder.png
+         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
+
+   .. tab:: Message
+      :tabid: message
+
+      .. figure:: /includes/images/builder-popup-photoshop.png
+         :alt: Screenshot of builder expression in visual studio with information message displayed.
+
+
+Click the following tabs to see an example of a builder expression
+and its corresponding {+query-api+} expression:
+
+.. tabs::
+
+   .. tab:: Builders
+      :tabid: builder
+
+      .. code-block:: csharp
+
+         var filter = Builders<Movie>.Filter.Eq(m => m.Genre, genre) &
+                      Builders<Movie>.Filter.Gte(m => m.Score, minScore) &
+                      Builders<Movie>.Filter.Regex(m => m.Score, titleSearchTerm);
+
+   .. tab:: {+query-api+}
+      :tabid: query-api
+
+      .. code-block:: json
+
+         {
+           "$and": [ { "Genre": genre },
+             { "Score": { "$gte": minScore } },
+             { "Score": /titleSearchTerm/ } ]
+         }
 
 Analyze LINQ
 ------------
