@@ -15,13 +15,13 @@ Analyze Your Code
 Overview
 --------
 
-Learn how to use **static analysis** to analyze your code with the {+product+}.
+Learn how to use the {+product+} to **statically analyze** your {+driver-long+} code.
 Static analysis is a technique where software inspects your
 code without running it.
 
 The {+product+} can analyze **builder** and **Language Integrated Query (LINQ)** expressions.
 
-A builder is a class provided by the {+driver-long+} to help you construct
+A builder is a class provided by the {+driver-short+} to help you construct
 `BSON <https://bsonspec.org/>`__ objects.
 
 LINQ is a query syntax included in the C# language. The {+driver-short+}
