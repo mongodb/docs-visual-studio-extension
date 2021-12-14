@@ -22,7 +22,7 @@
 Overview
 --------
 
-The `{+product+} <{+product-home-page+}>`__ is an add-on for the Visual Studio IDE
+The `{+product+} <{+product-home-page+}>`__ is a NuGet package
 that helps you understand the following about your {+driver-long+} 
 code:
 
@@ -47,3 +47,9 @@ To view answers to frequently asked questions, see the :doc:`FAQ </faq>` page.
 
 To view the differences between versions of the extension,
 see the :doc:`What's New <whats-new>` page. 
+
+.. note:: Roslyn Analyzer
+
+   The {+product+} is a Roslyn Analyzer. To learn more about Roslyn Analyzers, see 
+   `Overview of Source Code Analysis <https://docs.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2022>`__
+   from Microsoft.
