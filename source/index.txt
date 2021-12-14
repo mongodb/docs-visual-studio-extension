@@ -27,7 +27,7 @@ that helps you understand the following about your {+driver-long+}
 code:
 
 - How your code translates into the {+query-api+}
-- Does your code include an unsupported LINQ or builder expression
+- If your code includes unsupported LINQ or builder expressions
 
 The {+product+} can analyze the following groups of {+driver-short+} expressions:
 
