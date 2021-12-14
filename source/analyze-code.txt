@@ -79,7 +79,7 @@ To analyze your builder expressions in Visual Studio, perform the following acti
    guide.
 2. Write a builder expression with the {+driver-short+}
 3. Move your mouse over the :guilabel:`...` annotation beneath the first
-   method of your builder expression to display an information mesage.
+   method of your builder expression to display an information message.
 
 Click the following tabs to see a builder expression with and without the
 information message displayed:
@@ -148,7 +148,7 @@ To analyze your LINQ expressions in Visual Studio, perform the following actions
    guide.
 2. Write a LINQ expression with the {+driver-short+}
 3. Move your mouse over the :guilabel:`...` annotation beneath the first
-   method of your LINQ expression to display an information mesage.
+   method of your LINQ expression to display an information message.
 
 Click the following tabs to see an example of a LINQ expression
 and its corresponding {+query-api+} expression:
