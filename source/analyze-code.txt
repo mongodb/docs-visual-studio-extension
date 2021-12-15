@@ -207,7 +207,7 @@ and the corresponding warning message displayed by the {+product+}:
 
 .. include:: /includes/command-line.rst
 
-To view more examples of unsupported LINQ expression, see the 
+To view more examples of unsupported LINQ expressions, see the 
 `{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressionsBasicTestCases.cs>`__.
 
 Analyze LINQ3
