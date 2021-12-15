@@ -207,6 +207,9 @@ and the corresponding warning message displayed by the {+product+}:
 
 .. include:: /includes/command-line.rst
 
+To view more examples of unsupported LINQ expression, see the 
+`{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressionsBasicTestCases.cs>`__.
+
 Analyze LINQ3
 ~~~~~~~~~~~~~
 
@@ -216,3 +219,6 @@ provider. To learn how to configure your LINQ provider, see the
 
 To learn more about LINQ3, see `LINQ3 <{+driver-docs+}reference/driver/crud/linq3/>`__
 in the {+driver-short+} documentation.
+
+To view examples of expressions the {+driver-short+} supports with the LINQ3 provider, see the 
+`{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2TestCases.cs>`__.
