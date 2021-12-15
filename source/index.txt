@@ -21,12 +21,12 @@
 Overview
 --------
 
-The `{+product+} <{+product-home-page+}>`__ is an add-on for the Visual Studio IDE
+The `{+product+} <{+product-home-page+}>`__ is a NuGet package
 that helps you understand the following about your {+driver-long+} 
 code:
 
 - How your code translates into the {+query-api+}
-- Does your code include an unsupported LINQ or builder expression
+- If your code includes unsupported LINQ or builder expressions
 
 The {+product+} can analyze the following groups of {+driver-short+} expressions:
 
@@ -46,3 +46,9 @@ To view answers to frequently asked questions, see the :doc:`FAQ </faq>` page.
 
 To view the differences between versions of the extension,
 see the :doc:`What's New <whats-new>` page. 
+
+.. note:: Roslyn Analyzer
+
+   The {+product+} is a Roslyn Analyzer. To learn more about Roslyn Analyzers, see 
+   `Overview of Source Code Analysis <https://docs.microsoft.com/en-us/visualstudio/code-quality/roslyn-analyzers-overview?view=vs-2022>`__
+   from Microsoft.
