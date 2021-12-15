@@ -88,7 +88,7 @@ information message displayed:
       :tabid: no-message
 
       .. figure:: /includes/images/builder.png
-         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
+         :alt: Screenshot of builder expression in visual studio with ellipsis annotation.
 
    .. tab:: With Information Message
       :tabid: message
@@ -158,7 +158,7 @@ displayed:
       :tabid: without-message
 
       .. figure:: /includes/images/linq.png
-         :alt: Screenshot of builder expression in visual studio with elipsis annotation.
+         :alt: Screenshot of builder expression in visual studio with ellipsis annotation.
 
    .. tab:: With Information Message
       :tabid: with-message
