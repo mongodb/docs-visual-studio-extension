@@ -22,7 +22,7 @@
 Overview
 --------
 
-The `{+product+} <{+product-home-page+}>`__ is a NuGet package
+The `{+product+} <{+product-home-page+}>`__ is a tool
 that helps you understand the following about your {+driver-long+} 
 code:
 
