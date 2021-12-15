@@ -15,14 +15,11 @@ Analyze Your Code
 Overview
 --------
 
-Learn how to use the {+product+} to **statically analyze** your {+driver-long+} code.
-Static analysis is a technique where software inspects your
-code without running it.
-
+Learn how to use the {+product+} to analyze your {+driver-long+} code.
 The {+product+} can analyze **builder** and **Language Integrated Query (LINQ)** expressions.
 
 A builder is a class provided by the {+driver-short+} to help you construct
-`BSON <https://bsonspec.org/>`__ objects.
+common operations like queries and updates.
 
 LINQ is a query syntax included in the C# language. The {+driver-short+}
 can translate a subset of LINQ expressions into MongoDB aggregation pipelines.
