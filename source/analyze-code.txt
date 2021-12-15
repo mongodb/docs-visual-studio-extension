@@ -84,13 +84,13 @@ information message displayed:
 
 .. tabs::
 
-   .. tab:: No Message
+   .. tab:: Without Information Message
       :tabid: no-message
 
       .. figure:: /includes/images/builder.png
          :alt: Screenshot of builder expression in visual studio with elipsis annotation.
 
-   .. tab:: Message
+   .. tab:: With Information Message
       :tabid: message
 
       .. figure:: /includes/images/builder-popup-photoshop.png
@@ -144,7 +144,7 @@ To analyze your LINQ expressions in Visual Studio, perform the following actions
 
 1. Install the {+product+} as described in the :doc:`Install </install>`
    guide.
-2. Write a LINQ expression with the {+driver-short+}
+2. Write a LINQ expression with the {+driver-short+}.
 3. Move your mouse over the :guilabel:`...` annotation beneath the first
    method of your LINQ expression to display an information message that contains
    the {+query-api+} translation.
