@@ -69,6 +69,8 @@ and its corresponding {+query-api+} translation:
              { "Score": /titleSearchTerm/ } ]
          }
 
+.. include:: /includes/variable-names.rst
+
 Analyze Builders in Visual Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -140,6 +142,8 @@ and its corresponding {+query-api+} translation:
               "Title" : /titleSearchTerm/s }
            }, 
            { "$sort" : { "Score" : 1 } }]
+
+.. include:: /includes/variable-names.rst
 
 Analyze LINQ in Visual Studio
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -227,8 +231,8 @@ provider. To learn how to configure your LINQ provider, see the
    the default LINQ provider (LINQ2), the {+product+} informs you if your LINQ expression
    is supported by LINQ3 but not LINQ2.
 
-   Click the tabs to see a LINQ expression supported by LINQ3 but not LINQ2, and the
-   corresponding warning output by the {+product+}  
+   Click the tabs to see a LINQ expression supported by LINQ3 but not LINQ2 and the
+   corresponding warning output by the {+product+}:
 
    .. tabs::
 
