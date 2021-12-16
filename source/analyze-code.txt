@@ -38,6 +38,8 @@ To learn more about LINQ, see the following resources:
 To learn more about aggregation pipelines, see
 :manual:`Aggregation </aggregation/>` in the MongoDB manual.
 
+.. _analyzer-analyze-builders:
+
 Analyze Builders
 ----------------
 
@@ -53,8 +55,8 @@ and its corresponding {+query-api+} translation:
       .. code-block:: csharp
 
          var filter = Builders<Movie>.Filter.Eq(m => m.Genre, genre) &
-                      Builders<Movie>.Filter.Gte(m => m.Score, minScore) &
-                      Builders<Movie>.Filter.Regex(m => m.Score, titleSearchTerm);
+             Builders<Movie>.Filter.Gte(m => m.Score, minScore) &
+             Builders<Movie>.Filter.Regex(m => m.Score, titleSearchTerm);
 
    .. tab:: {+query-api+}
       :tabid: query-api-builders
@@ -96,7 +98,9 @@ information message displayed:
       .. figure:: /includes/images/builder-popup-photoshop.png
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
-.. include:: /includes/command-line.rst
+.. include:: /includes/error-list-window.rst
+
+.. _analyzer-analyze-linq:
 
 Analyze LINQ
 ------------
@@ -105,7 +109,7 @@ Use the {+product+} to learn the following
 about your LINQ expressions:
 
 - How your LINQ expressions translate into the {+query-api+}
-- If your LINQ expressions contain an unsupported operator
+- If your LINQ expressions is not supported
 
 Click the following tabs to see an example of a LINQ expression
 and its corresponding {+query-api+} translation:
@@ -167,7 +171,7 @@ displayed:
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
 
-If your LINQ expression contains an unsupported operator, the {+product+} outputs a
+If your LINQ expression is not supported, the {+product+} outputs a
 ``NotSupportedLinqExpression`` warning.
 
 Click the following tabs to see a code snippet containing an unsupported LINQ expression
@@ -205,7 +209,7 @@ and the corresponding warning message displayed by the {+product+}:
       .. figure:: /includes/images/linq-unsupported-popup.png
          :alt: Screenshot of warning displayed in Visual Studio from unsupported LINQ.
 
-.. include:: /includes/command-line.rst
+.. include:: /includes/error-list-window.rst
 
 To view more examples of unsupported LINQ expressions, see the 
 `{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressionsBasicTestCases.cs>`__.
@@ -217,8 +221,36 @@ To analyze a LINQ3 expression, you must configure the {+product+} to use the LIN
 provider. To learn how to configure your LINQ provider, see the
 :doc:`configuration </configuration>` guide.
 
+.. important::
+
+   If your {+driver-short+} version supports LINQ3 but you configure your {+product+} to use
+   the default LINQ provider, the {+product+} outputs a NOT DONE YET 
+
 To learn more about LINQ3, see `LINQ3 <{+driver-docs+}reference/driver/crud/linq3/>`__
 in the {+driver-short+} documentation.
 
 To view examples of expressions the {+driver-short+} supports with the LINQ3 provider, see the 
 `{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2TestCases.cs>`__.
+
+Use the {+product+} From the Command Line
+----------------------------------------------
+
+To run the {+product+} from the command line and save your results to a 
+:github:`SARIF </microsoft/sarif-tutorials/blob/main/docs/1-Introduction.md>`
+file, perform the following actions:
+
+- Install the {+product+} as described in the :doc:`Install </install>` guide.
+- Execute the following command:
+   
+.. code-block:: shell
+
+   dotnet build -property:ErrorLog=<Path to save your {+product+} report>
+
+To learn more about ``dotnet build``, see 
+`.NET Fundamentals <https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-build>`__
+from Microsoft.
+
+To learn more about the ``ErrorLog`` setting, see
+`Error and warning opptions <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/compiler-options/errors-warnings#errorlog>`__
+from Microsoft.
+ 
