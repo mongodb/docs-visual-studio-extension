@@ -81,7 +81,7 @@ by the {+product+}:
        .. tip::
 
           To learn more about LINQ, see the
-          `Analyze Your Code <TODO: LINK TO GUIDE ONCE IT IS MERGED>`__
+          :ref:`Analyze Your Code <analyzer-analyze-linq>`
           page.
 
        | **Default**: ``"V2"``
