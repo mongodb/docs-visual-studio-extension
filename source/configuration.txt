@@ -56,8 +56,57 @@ To learn more about the ``AdditionalFiles`` tag, see
 :github:`Using Additonal Files </dotnet/roslyn/blob/main/docs/analyzers/Using%20Additional%20Files.md>`
 in the Roslyn documentation.
 
-Settings
---------
+Options
+-------
+
+The following is a description of all configuration settings supported
+by the {+product+}:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 35 65
+
+   * - Name
+     - Description
+
+   * - | **DefaultLinqVersion**
+     - | **Type:** string
+       |
+       | **Description:**
+       | The LINQ provider the {+product+} uses.
+         
+       .. tip::
+
+          To learn more about LINQ, see the
+          `Analyze Your Code <TODO: LINK TO GUIDE ONCE IT IS MERGED>`__
+          page.
+
+       | **Default**: ``"V2"``
+       | **Accepted Values**: ``"V2"`` or ``"V3"``
+
+   * - | **OutputDriverVersion**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} sends your {+driver-short+} version in
+         diagnostic messages sent to MongoDB. 
+       |
+       | **Default**: ``true``
+       | **Accepted Values**: ``true`` or ``false``
+
+   * - | **OutputInternalExceptions**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} outputs your {+driver-short+} version in
+         logs. 
+       |
+       | **Default**: ``true``
+       | **Accepted Values**: ``true`` or ``false``
+
+
+To learn more about the configuration options the {+product+} supports,
+see the :github:`{+product+} source code </master/src/MongoDB.Analyzer/Core/Settings/SettingsHelper.cs>`.
 
 Telemetry
 ~~~~~~~~~
