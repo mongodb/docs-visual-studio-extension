@@ -98,12 +98,33 @@ by the {+product+}:
      - | **Type:** boolean
        |
        | **Description:**
-       | Specifies if the {+product+} outputs your {+driver-short+} version in
-         logs. 
+       | Specifies if the {+product+} sends diagnostic messages to MongoDB about
+         internal exceptions.
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
 
+   * - | **OutputInternalLogsToFile**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} writes its internal logs to a file.
+
+       .. include:: includes/logging-admonition.rst       
+
+       | **Default**: ``false``
+       | **Accepted Values**: ``true`` or ``false``
+
+   * - | **LogFileName**
+     - | **Type:** string
+       |
+       | **Description:**
+       | Specifies the path to which the {+product+} writes its internal logs.
+       
+       .. include:: includes/logging-admonition.rst       
+
+       | **Default**: ``""``
+       | **Accepted Values**: A valid path
 
 To learn more about the configuration options the {+product+} supports,
 see the :github:`{+product+} source code </master/src/MongoDB.Analyzer/Core/Settings/SettingsHelper.cs>`.
@@ -111,11 +132,16 @@ see the :github:`{+product+} source code </master/src/MongoDB.Analyzer/Core/Sett
 Telemetry
 ~~~~~~~~~
 
-When the {+product+} analyzes your source code, the tool
+When the {+product+} analyzes your source code, the tool by default
 sends the following information to MongoDB:
 
 - Your .NET version installed in Visual Studio
 - Your operating system
 - TODO: Make sure this list is exhaustive
 
-To disable this feature, TODO: Include how to disable.
+To disable this feature, specify the following options in your configuration file:
+
+.. code-block:: json
+
+   OutputInternalExceptions: false,
+   OutputDriverVersion: false
