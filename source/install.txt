@@ -1,1 +1,22 @@
+.. _mongodb-analyzer-install:
+
+Install the {+product+}
+----------------------------
+
+.. default-domain:: mongodb
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+Overview
+--------
+
+Learn how to install the {+product+}.
+
+Installation
+------------
+
 TODO: write
