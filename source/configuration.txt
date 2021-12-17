@@ -62,7 +62,7 @@ in the Roslyn documentation.
 Options
 -------
 
-The following is a description of all configuration settings supported
+The following is a description of all configuration options supported
 by the {+product+}:
 
 .. list-table::
@@ -91,9 +91,8 @@ by the {+product+}:
      - | **Type:** boolean
        |
        | **Description:**
-       | Specifies if the {+product+} sends your {+driver-short+} version in
-         diagnostic messages sent to MongoDB (the company) to help improve the
-         {+product+}. 
+       | Specifies if the {+product+} includes your {+driver-short+} version in
+         diagnostic messages sent to MongoDB (the company). 
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
@@ -103,7 +102,7 @@ by the {+product+}:
        |
        | **Description:**
        | Specifies if the {+product+} sends diagnostic messages to MongoDB (the company)
-         about internal exceptions to help improve the {+product+}.
+         about internal exceptions.
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
@@ -128,7 +127,7 @@ by the {+product+}:
        .. include:: includes/logging-admonition.rst       
 
        | **Default**: ``""``
-       | **Accepted Values**: A valid path
+       | **Accepted Values**: A valid file path.
 
 To learn more about the configuration options the {+product+} supports,
 see the :github:`{+product+} source code </master/src/MongoDB.Analyzer/Core/Settings/SettingsHelper.cs>`.
@@ -137,7 +136,7 @@ Telemetry
 ~~~~~~~~~
 
 When the {+product+} analyzes your source code, the tool by default
-sends the following anonymized information to MongoDB:
+sends the following anonymized information to MongoDB (the company):
 
 - Your .NET version installed in Visual Studio
 - Your operating system
