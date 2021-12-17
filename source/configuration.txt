@@ -1,16 +1,35 @@
-TODO: write
+.. _visual-studio-extension-configuration:
 
-TODO: Incorporate Telemetery Information
+==============================
+Configure the {+product+}
+==============================
 
-.. important:: Telemetry
-   
-   When the {+product+} analyzes your source code, the extension
-   sends the following information to MongoDB:
+.. default-domain:: mongodb
 
-   - Your .NET version installed in Visual Studio
-   - Your operating system
-   - TODO: Make sure this list is exhaustive
+.. toctree::
+   :titlesonly:
+   :maxdepth: 2
 
-   To disable this feature, TODO: Include how to disable.
+Overview
+--------
 
-PREVIOUS DRAFT OF TELEMETRY STATEMENT ^
+Learn how to configure the {+product+}, and the configuration options provided by
+the {+product+}.
+
+Configuration
+-------------
+
+Settings
+--------
+
+Telemetry
+~~~~~~~~~
+
+When the {+product+} analyzes your source code, the tool
+sends the following information to MongoDB:
+
+- Your .NET version installed in Visual Studio
+- Your operating system
+- TODO: Make sure this list is exhaustive
+
+To disable this feature, TODO: Include how to disable.
