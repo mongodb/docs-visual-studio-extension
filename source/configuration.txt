@@ -56,7 +56,7 @@ To learn more about .NET project files, see
 from Microsoft.
 
 To learn more about the ``AdditionalFiles`` tag, see 
-:github:`Using Additonal Files </dotnet/roslyn/blob/main/docs/analyzers/Using%20Additional%20Files.md>`
+:github:`Using Additional Files </dotnet/roslyn/blob/main/docs/analyzers/Using%20Additional%20Files.md>`
 in the Roslyn documentation.
 
 Options
