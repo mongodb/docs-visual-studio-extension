@@ -31,21 +31,22 @@ To configure the {+product+}, perform the following actions:
       You can put your settings file in any directory, but you must name your
       file ``{+product-settings-file-constant+}``.
 
-#. Add your configuration to your ``{product-settings-file-constant}`` file.
+#. Add your configuration to your ``{+product-settings-file-constant+}`` file.
 
-   The following sample configuration makes the {+product+} output your {+driver-long+}
-   version in logs:
+   The following sample configuration makes the {+product+} use the 
+   `LINQ3 <{+driver-docs+}reference/driver/crud/linq3/>`__
+   provider.
 
    .. code-block:: json
 
-      { "OutputDriverVersion": false }
+      { "DefaultLinqVersion": "V3" }
 
 #. Add the following to the ``.csproj`` for your .NET application within the ``Project`` tag:
 
    .. code-block:: xml
 
       <ItemGroup>
-        <AdditionalFiles Include="<Path to your {+product-settings-file-constant+} file>" />
+        <AdditionalFiles Include="<path to your {+product-settings-file-constant+} file>" />
       </ItemGroup>
 
 To learn more about .NET project files, see 
@@ -89,7 +90,8 @@ by the {+product+}:
        |
        | **Description:**
        | Specifies if the {+product+} sends your {+driver-short+} version in
-         diagnostic messages sent to MongoDB. 
+         diagnostic messages sent to MongoDB (the company) for tracking usage
+         of the {+product+}. 
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
@@ -98,8 +100,8 @@ by the {+product+}:
      - | **Type:** boolean
        |
        | **Description:**
-       | Specifies if the {+product+} sends diagnostic messages to MongoDB about
-         internal exceptions.
+       | Specifies if the {+product+} sends diagnostic messages to MongoDB (the company)
+         about internal exceptions for tracking usage of the {+product+}.
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
