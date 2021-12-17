@@ -13,11 +13,48 @@ Configure the {+product+}
 Overview
 --------
 
-Learn how to configure the {+product+}, and the configuration options provided by
-the {+product+}.
+Learn how to configure the {+product+} in your .NET project and what
+configuration options are available.
 
 Configuration
 -------------
+
+To configure the {+product+}, perform the following actions:
+
+#. Install the {+product+} as described in the :doc:`Install </install>` guide.
+
+#. Create a file specifying your configuration for the {+product+} named
+   ``{+product-settings-file-constant+}``.
+   
+   .. important:: Naming
+
+      You can put your settings file in any directory, but you must name your
+      file ``{+product-settings-file-constant+}``.
+
+#. Add your configuration to your ``{product-settings-file-constant}`` file.
+
+   The following sample configuration makes the {+product+} output your {+driver-long+}
+   version in logs:
+
+   .. code-block:: json
+
+      { "OutputDriverVersion": false }
+
+#. Add the following to the ``.csproj`` for your .NET application within the ``Project`` tag:
+
+   .. code-block:: xml
+
+      <ItemGroup>
+        <AdditionalFiles Include="<Path to your {+product-settings-file-constant+} file>" />
+      </ItemGroup>
+
+To learn more about .NET project files, see 
+`Understanding the Project File <https://docs.microsoft.com/en-us/aspnet/web-forms/overview/deployment/web-deployment-in-the-enterprise/understanding-the-project-file>`__
+from Microsoft.
+
+To learn more about the ``AdditionalFiles`` tag, see 
+:github:`Using Additonal Files </dotnet/roslyn/blob/main/docs/analyzers/Using%20Additional%20Files.md>`
+in the Roslyn documentation.
 
 Settings
 --------
