@@ -92,8 +92,8 @@ by the {+product+}:
        |
        | **Description:**
        | Specifies if the {+product+} sends your {+driver-short+} version in
-         diagnostic messages sent to MongoDB (the company) for tracking usage
-         of the {+product+}. 
+         diagnostic messages sent to MongoDB (the company) to help improve the
+         {+product+}. 
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
@@ -103,7 +103,7 @@ by the {+product+}:
        |
        | **Description:**
        | Specifies if the {+product+} sends diagnostic messages to MongoDB (the company)
-         about internal exceptions for tracking usage of the {+product+}.
+         about internal exceptions to help improve the {+product+}.
        |
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
@@ -137,7 +137,7 @@ Telemetry
 ~~~~~~~~~
 
 When the {+product+} analyzes your source code, the tool by default
-sends the following information to MongoDB:
+sends the following anonymized information to MongoDB:
 
 - Your .NET version installed in Visual Studio
 - Your operating system
@@ -147,5 +147,5 @@ To disable this feature, specify the following options in your configuration fil
 
 .. code-block:: json
 
-   OutputInternalExceptions: false,
-   OutputDriverVersion: false
+   "OutputInternalExceptions": false,
+   "OutputDriverVersion": false
