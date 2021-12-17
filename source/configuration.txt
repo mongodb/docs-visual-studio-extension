@@ -6,9 +6,11 @@ Configure the {+product+}
 
 .. default-domain:: mongodb
 
-.. toctree::
-   :titlesonly:
-   :maxdepth: 2
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
 
 Overview
 --------
