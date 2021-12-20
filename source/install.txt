@@ -32,5 +32,5 @@ To learn more about installing NuGet packages from the command line, see
 from Microsoft.
 
 To learn more about installing NuGet packages from Visual Studio, see
-`Install and manage packages in Visual Studio using the NuGet Package Manager' <https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio>`__
+`Install and manage packages in Visual Studio using the NuGet Package Manager <https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio>`__
 from Microsoft.
