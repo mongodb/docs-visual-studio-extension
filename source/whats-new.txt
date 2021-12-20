@@ -12,7 +12,9 @@ What's New
    :depth: 1
    :class: singlecol
 
+.. _mongodb-analyzer-whats-new-1.0:
+
 What's New in 1.0
 -----------------
 
-The initial GA release.
+The initial release.
