@@ -19,10 +19,14 @@ Learn how to install the {+product+}.
 Installation
 ------------
 
-To install the {+product+}, perform the following actions, run the following
+To install the {+product+}, run the following
 command from the root directory of your .NET project:
 
 .. include:: /includes/nuget-versioned-install/{+product-version-full+}.rst
 
 To view the NuGet page for the {+product+}, see 
-`{+product-package-name+} <{+product-nuget-link+}>`__ on NuGet.
+`{+product-package-name+} <{+product-nuget-link+}>`__ on NuGet Gallery.
+
+To learn more about installing packages with NuGet, see
+`NuGet Powershell Reference <https://docs.microsoft.com/en-us/nuget/reference/powershell-reference>`__
+from Microsoft.
