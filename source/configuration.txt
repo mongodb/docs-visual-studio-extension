@@ -23,15 +23,15 @@ Configuration
 
 To configure the {+product+}, perform the following actions:
 
-#. Install the {+product+} as described in the :doc:`Install </install>` guide.
+#. Install the {+product+} as described in
+   `the installation guide <TODO: ref link to the install guide once it's written>`__.
 
 #. Create a file specifying your configuration for the {+product+} named
    ``{+product-settings-file-constant+}``.
    
    .. important:: Naming
 
-      You can put your settings file in any directory, but you must name your
-      file ``{+product-settings-file-constant+}``.
+      You must name your configuration file ``{+product-settings-file-constant+}``.
 
 #. Add your configuration to your ``{+product-settings-file-constant+}`` file.
 
@@ -43,7 +43,7 @@ To configure the {+product+}, perform the following actions:
 
       { "DefaultLinqVersion": "V3" }
 
-#. Add the following to the ``.csproj`` for your .NET application within the ``Project`` tag:
+#. Add the following to the ``.csproj`` file for your .NET application within the ``Project`` tag:
 
    .. code-block:: xml
 
@@ -130,7 +130,8 @@ by the {+product+}:
      - | **Type:** boolean
        |
        | **Description:**
-       | Specifies if the {+product+} sends anonymized information to MongoDB (the company).
+       | Specifies if the {+product+} collects and sends anonymized information
+         to MongoDB Inc. to improve products.
          To learn more, see the :ref:`telemetry <mongodb-analyzer-configuration-telemetry>`
          section of this guide.
 
@@ -147,7 +148,8 @@ Telemetry
 ~~~~~~~~~
 
 When the {+product+} analyzes your source code, the tool by default
-sends anonymized information to MongoDB (the company).
+collects and sends anonymized information to MongoDB Inc. to improve
+products.
 
 To disable this feature, specify the following option in your configuration file:
 
@@ -158,3 +160,6 @@ To disable this feature, specify the following option in your configuration file
 To view a complete list of all information collected by the {+product+} when you
 have enabled telemetry, see the `FAQ <TODO: link to this question in FAQ>`__
 page.
+
+To learn more about how MongoDB Inc. uses collected data, see the
+`Privacy Policy <https://www.mongodb.com/legal/privacy-policy>`__.
