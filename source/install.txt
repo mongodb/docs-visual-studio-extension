@@ -14,7 +14,7 @@ Install the {+product+}
 Overview
 --------
 
-Learn how to install the {+product+}.
+Learn how to install the {+product+} in your .NET application.
 
 Installation
 ------------
