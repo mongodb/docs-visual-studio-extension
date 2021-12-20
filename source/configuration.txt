@@ -132,8 +132,12 @@ by the {+product+}:
        | **Description:**
        | Specifies if the {+product+} collects and sends anonymized information
          to MongoDB Inc. to improve products.
-         To learn more, see the :ref:`telemetry <mongodb-analyzer-configuration-telemetry>`
-         section of this guide.
+
+       .. tip::
+
+          To learn more about telemetry in the {+product+}, see the
+          :ref:`<mongodb-analyzer-configuration-telemetry>`
+          section of this guide.
 
        | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
