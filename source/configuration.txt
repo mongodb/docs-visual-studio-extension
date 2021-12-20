@@ -125,17 +125,17 @@ by the {+product+}:
        .. include:: includes/logging-admonition.rst       
 
        | **Default**: ``""``
-       | **Accepted Values**: A valid file path.
+       | **Accepted Values**: A valid file path
    * - | **SendTelemetry**
      - | **Type:** boolean
        |
        | **Description:**
        | Specifies if the {+product+} sends anonymized information to MongoDB (the company).
-       | To learn more, see the :ref:`telemetry <mongodb-analyzer-configuration-telemetry>`
+         To learn more, see the :ref:`telemetry <mongodb-analyzer-configuration-telemetry>`
          section of this guide.
 
        | **Default**: ``true``
-       | **Accepted Values**: A valid file path.
+       | **Accepted Values**: ``true`` or ``false``
 
 
 To learn more about the configuration options the {+product+} supports,
