@@ -22,7 +22,9 @@ Installation
 To install the {+product+}, run the following
 command from the root directory of your .NET project:
 
-.. include:: /includes/nuget-versioned-install/{+product-version-full+}.rst
+.. code-block:: shell
+
+   Install-Package {+product-package-name+} -Version {+product-version-full+}
 
 To view the NuGet page for the {+product+}, see 
 `{+product-package-name+} <{+product-nuget-link+}>`__ on NuGet Gallery.
