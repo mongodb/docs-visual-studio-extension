@@ -156,5 +156,5 @@ To disable this feature, specify the following option in your configuration file
    "SendTelemetry": false
 
 To view a complete list of all information collected by the {+product+} when you
-have enabled telemetry, see the `FAQ<TODO: link to this question in FAQ>`__
+have enabled telemetry, see the `FAQ <TODO: link to this question in FAQ>`__
 page.
