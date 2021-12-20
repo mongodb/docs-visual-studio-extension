@@ -1,0 +1,3 @@
+.. code-block:: shell
+
+   Install-Package MongoDB.Analyzer -Version 1.0.0
