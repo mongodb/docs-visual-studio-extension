@@ -6,6 +6,6 @@
 
    .. code-block:: json
 
-      OutputInternalLogsToFile: true,
-      LogFileName: "<path to your logfile>"
+      "OutputInternalLogsToFile": true,
+      "LogFileName": "<path to your logfile>"
 
