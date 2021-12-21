@@ -9,6 +9,7 @@ product-nuget-link = "TODO:Link to NuGet Package Page for Product"
 product-package-name = "MongoDB.Analyzer"
 product-version = "1.0"
 product-version-full = "{+product-version+}.0"
+product-settings-file-constant = "mongodb.analyzer.json"
 query-api = "MongoDB Query API"
 
 driver-long = "MongoDB .NET driver"
