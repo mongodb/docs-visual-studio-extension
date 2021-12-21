@@ -21,7 +21,7 @@ welcome you to test the {+product+} on your JetBrains Rider deployment,
 and if you see any issues feel free to file an 
 `issue on JIRA <{+product-jira+}>`__
 or submit a pull request on the 
-`{+product+} Github repository {+product-source-repo+}`__.
+`{+product+} Github repository <{+product-source-repo+}>`__.
 
 Is the {+product+} a Roslyn Analyzer?
 ------------------------------------------
@@ -35,7 +35,7 @@ from Microsoft.
 Does the {+product+} Use Custom Serialization Settings?
 ------------------------------------------------------------
 
-No, the {+product+} does not use custom seriliazation settings you specify for your
+No, the {+product+} does not use the custom seriliazation settings you specify for your
 {+driver-long+}.
 
 To learn more about custom serilization settings, see 
@@ -54,4 +54,11 @@ from Microsoft.
 What information does the {+product+} collect through telemetry?
 ---------------------------------------------------------------------
 
-TODO: enumerate information
+When you have telemetry enabled the {+product+} collects and sends the following
+anonymized information to MongoDB Inc.:
+
+.. include:: /includes/telemetry-data.rst
+
+To learn how to disable telemetry, see the
+:ref:`Configuration <mongodb-analyzer-configuration-telemetry>`
+guide.
