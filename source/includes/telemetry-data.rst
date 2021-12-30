@@ -14,7 +14,7 @@ The following is the information the {+product+} collects about your code:
 
 - The number of unsupported LINQ and builder expressions the {+product+} found in your code
 
-- The number of LINQ and builder expressions in your code
+- The number of LINQ and builder expressions the {+product+} found in your code
 
 - The number of MQL expressions the {+product+} found in your code
 
@@ -22,7 +22,7 @@ The following is the information the {+product+} collects about your code:
 
 - The number of exceptions the {+product+} encountered analyzing your code
 
-- The length of the syntax tree the {+product+} processes
+- The length of the syntax tree the {+product+} processed
 
 Your Environment
 ~~~~~~~~~~~~~~~~
@@ -33,7 +33,7 @@ The following is the information the {+product+} collects about your environment
 
 - The version of the {+product+} you use
 
-- The internal .NET version your IDE/Build utility uses to run the {+product+}
+- The internal .NET version your IDE or build utility uses to run the {+product+}
 
 - The version of the C# language you use
 
