@@ -18,7 +18,7 @@ Does the {+product+} work with JetBrains Rider?
 The {+product+} does not officially support JetBrains Rider. We have internally
 tested the {+product+} on JetBrains Rider and have seen some success. We
 welcome you to test the {+product+} on your JetBrains Rider deployment,
-and if you see any issues feel free to file an 
+and if you encounter any problems feel free to file an 
 `issue on JIRA <{+product-jira+}>`__
 or submit a pull request on the 
 `{+product+} Github repository <{+product-source-repo+}>`__.
