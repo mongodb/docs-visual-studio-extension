@@ -15,9 +15,10 @@ Frequently Asked Questions
 Does the {+product+} work with JetBrains Rider?
 ----------------------------------------------------
 
-The {+product+} does not officially support JetBrains Rider. We have internally
-tested the {+product+} on JetBrains Rider and have seen some success. We
-welcome you to test the {+product+} on your JetBrains Rider deployment,
+No, the {+product+} does not officially support JetBrains Rider.
+
+We have internally tested the {+product+} on JetBrains Rider and have seen some
+success though. We welcome you to test the {+product+} on your JetBrains Rider deployment,
 and if you encounter any problems feel free to file an 
 `issue on JIRA <{+product-jira+}>`__
 or submit a pull request on the 
@@ -50,6 +51,8 @@ No, the {+product+} does not use custom LINQ settings.
 To learn more about custom LINQ settings, see
 `How to add custom methods for LINQ queries <https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/how-to-add-custom-methods-for-linq-queries>`__
 from Microsoft.
+
+.. _mongodb-analyzer-all-telemetry-collected:
 
 What information does the {+product+} collect through telemetry?
 ---------------------------------------------------------------------
