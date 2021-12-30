@@ -12,8 +12,8 @@ Frequently Asked Questions
    :depth: 2
    :class: singlecol
 
-Does the {+product+} work with JetBrains Rider?
-----------------------------------------------------
+Does the {+product+} support JetBrains Rider?
+--------------------------------------------------
 
 No, the {+product+} does not officially support JetBrains Rider.
 
