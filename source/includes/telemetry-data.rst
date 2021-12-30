@@ -1,11 +1,13 @@
 
 .. 
-   This list describes all telemetry data collected
+   This file describes all telemetry data collected
    by the {+product+}. Field names are not included
    as they are not exposed through the public API.
 
 Your Code
 ~~~~~~~~~
+
+The following is the information the {+product+} collects about your code:
 
 - The number of unique data types you use as generic type parameters in your
   LINQ and builder expressions.
@@ -25,9 +27,13 @@ Your Code
 Your Environment
 ~~~~~~~~~~~~~~~~
 
+The following is the information the {+product+} collects about your environment:
+
+- Your operating system
+
 - The version of the MongoDB Analyzer you are using
 
-- The internal .NET version your IDE/Build utility is using to run Roslyn analyzers.
+- The internal .NET version your IDE/Build utility uses to run the {+product+}.
 
 - The version of the C# language you are using
 
@@ -48,10 +54,11 @@ Your Environment
   - ``UserName``
   - ``/domain``
 
-- Your operating system
-
 Your {+product+} Configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following is the information the {+product+} collects about your {+product+}
+configuration:
 
 - If you have logs enabled for the {+product+}
 

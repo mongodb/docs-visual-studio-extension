@@ -54,11 +54,12 @@ from Microsoft.
 What information does the {+product+} collect through telemetry?
 ---------------------------------------------------------------------
 
-When you have telemetry enabled the {+product+} collects and sends the following
-anonymized information to MongoDB Inc.:
-
-.. include:: /includes/telemetry-data.rst
+When you have telemetry enabled the {+product+} collects and sends
+anonymized information to MongoDB Inc. The following subsections list all
+information the {+product+} collects.
 
 To learn how to disable telemetry, see the
 :ref:`Configuration <mongodb-analyzer-configuration-telemetry>`
 guide.
+
+.. include:: /includes/telemetry-data.rst
