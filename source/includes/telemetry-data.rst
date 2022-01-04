@@ -9,7 +9,7 @@ Your Code
 
 The following is the information the {+product+} collects about your code:
 
-- The number of user-defined data types in your provided
+- The number of user-defined data types in your
   `mapping <{+driver-docs+}reference/bson/mapping/>`__
 
 - The number of unsupported LINQ and builder expressions the {+product+} found in your code
