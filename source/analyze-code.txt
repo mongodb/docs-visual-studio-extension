@@ -121,7 +121,7 @@ information message displayed:
 
 .. include:: /includes/error-list-window.rst
 
-.. _analyzer-analyze-linq:
+.. _mongodb-analyzer-analyze-linq:
 
 Analyze LINQ
 ------------
