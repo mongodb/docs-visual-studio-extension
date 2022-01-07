@@ -193,6 +193,7 @@ displayed:
       .. figure:: /includes/images/linq-popup.png
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
+.. _mongodb-analyzer-unsupported-linq:
 
 If your LINQ expression is not supported, the {+product+} outputs a
 ``NotSupportedLinqExpression`` warning.
