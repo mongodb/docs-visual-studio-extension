@@ -17,7 +17,7 @@ What's New
 What's New in 1.1
 -----------------
 
-New features of the {+product-version+} MongoDB Analyzer release include: 
+New features of the {+product-version+} {+product+} release include: 
 
 - ``EnableVariableTracking`` config option to track and compose variables 
   holding builders definitions. 
