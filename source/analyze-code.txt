@@ -121,8 +121,8 @@ information message displayed:
       .. figure:: /includes/images/builder-popup-photoshop.png
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
-The {+product+} supports builders variables tracking and composition. You can
-combine multiple builders expressions with `logical operators
+The {+product+} supports builder variable tracking and composition. You can
+combine multiple builder expressions with `logical operators
 <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/boolean-logical-operators>`__
 and view the {+query-api+} translation in the information message.
 
