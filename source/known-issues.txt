@@ -28,5 +28,5 @@ Error List Window on macOS
 
 Visual Studio for macOS does not have the Error List window feature. If
 you are using the {+product+} in Visual Studio for macOS, you will not
-be able to see output, such as {+query-api+} translations, from
-the {+product+} in one location.
+be able to see output from the {+product+}, such as {+query-api+}
+translations, in one location.
