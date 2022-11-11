@@ -102,22 +102,42 @@ To analyze your LINQ expressions in Visual Studio, perform the following actions
 Simple LINQ Expressions
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Click the following tabs to see a LINQ expression with and without an information message
-displayed:
+The {+product+} can analyze LINQ expressions written in method syntax and
+query syntax.
+
+Click the following tabs to see a LINQ expression written in method
+syntax with and without an information message displayed:
 
 .. tabs::
 
    .. tab:: Without Information Message
-      :tabid: without-message
+      :tabid: without-message-method-syntax
 
       .. figure:: /includes/images/linq.png
-         :alt: Screenshot of builder expression in visual studio with ellipsis annotation.
+         :alt: Screenshot of LINQ expression in Visual Studio with ellipsis annotation.
 
    .. tab:: With Information Message
-      :tabid: with-message
+      :tabid: with-message-method-syntax
 
       .. figure:: /includes/images/linq-popup.png
-         :alt: Screenshot of builder expression in visual studio with information message displayed.
+         :alt: Screenshot of LINQ expression in Visual Studio with information message displayed.
+
+Click the following tabs to see a LINQ expression written in query
+syntax with and without an information message displayed:
+
+.. tabs::
+
+   .. tab:: Without Information Message
+      :tabid: without-message-query-syntax
+
+      .. figure:: /includes/images/linq-query.png
+         :alt: Screenshot of LINQ expression in Visual Studio with ellipsis annotation.
+
+   .. tab:: With Information Message
+      :tabid: with-message-query-syntax
+
+      .. figure:: /includes/images/linq-query-popup.png
+         :alt: Screenshot of LINQ expression in Visual Studio with information message displayed.
 
 .. _mongodb-analyzer-unsupported-linq:
 
@@ -165,7 +185,7 @@ and the corresponding warning message displayed by the {+product+}:
 .. include:: /includes/error-list-window.rst
 
 To view more examples of unsupported LINQ expressions, see the 
-`{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressionsBasicTestCases.cs>`__.
+`{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressions.cs>`__.
 
 .. _mongodb-analyzer-analyze-linq3:
 
@@ -207,4 +227,4 @@ in the {+driver-short+} documentation.
 
 To view examples of expressions the {+driver-short+} only supports with the LINQ3 provider, see the 
 `{+product+} Github repository
-<{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2TestCases.cs>`__.
+<{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2.cs>`__.
