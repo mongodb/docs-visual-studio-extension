@@ -26,6 +26,7 @@ program to see analysis of LINQ expressions:
 Error List Window on macOS
 --------------------------
 
-If you are using the {+product+} in Visual Studio for macOS, you will
-not be able to see the output from the {+product+} in the Error List
-Window.
+Visual Studio for macOS does not have the Error List window feature. If
+you are using the {+product+} in Visual Studio for macOS, you will not
+be able to see output, such as {+query-api+} translations, from
+the {+product+} in one location.
