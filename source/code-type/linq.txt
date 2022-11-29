@@ -66,12 +66,13 @@ and its corresponding {+query-api+} translation:
 
       .. code-block:: csharp
 
-         var movies = await moviesCollection.Where(m =>
-             m.Genre == genre &&
-             m.Score >= minScore &&
-             m.Title.Contains(titleSearchTerm)).
-             OrderBy(m => m.Score).
-             ToListAsync();
+         var books = queryableCollection
+                .Where(b =>
+                    b.Genre == genre &&
+                    b.Price >= minPrice &&
+                    b.Title.Contains(titleSearchTerm))
+                .OrderBy(b => b.Price)
+                .ToList();
 
    .. tab:: {+query-api+}
       :tabid: query-api-linq
@@ -80,10 +81,11 @@ and its corresponding {+query-api+} translation:
 
          [{ "$match" : { 
               "Genre" : genre, 
-              "Score" : { "$gte" : minScore }, 
+              "Price" : { "$gte" : minPrice }, 
               "Title" : /titleSearchTerm/s }
            }, 
-           { "$sort" : { "Score" : 1 } }]
+           { "$sort" : { "Price" : 1 } }]
+
 
 .. include:: /includes/variable-names.rst
 

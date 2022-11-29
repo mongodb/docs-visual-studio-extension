@@ -82,7 +82,7 @@ information message displayed:
    .. tab:: With Information Message
       :tabid: message
 
-      .. figure:: /includes/images/builder-popup-photoshop.png
+      .. figure:: /includes/images/builder-popup.png
          :alt: Screenshot of builder expression in visual studio with information message displayed.
 
 .. include:: /includes/error-list-window.rst
