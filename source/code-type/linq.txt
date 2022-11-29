@@ -188,7 +188,7 @@ and the corresponding warning message displayed by the {+product+}:
 .. include:: /includes/error-list-window.rst
 
 To view more examples of unsupported LINQ expressions, see the 
-`{+product+} Github repository <{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressions.cs>`__.
+`{+product+} Github repository <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressions.cs>`__.
 
 .. _mongodb-analyzer-analyze-linq3:
 
@@ -230,4 +230,4 @@ in the {+driver-short+} documentation.
 
 To view examples of expressions the {+driver-short+} only supports with the LINQ3 provider, see the 
 `{+product+} Github repository
-<{+product-source-repo+}/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2.cs>`__.
+<{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2.cs>`__.
