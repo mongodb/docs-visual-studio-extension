@@ -10,6 +10,12 @@ What's New
    :depth: 1
    :class: singlecol
 
+Learn what's new in:
+
+* :ref:`Version 1.2 <mongodb-analyzer-whats-new-1.2>`
+* :ref:`Version 1.1 <mongodb-analyzer-whats-new-1.1>`
+* :ref:`Version 1.0 <mongodb-analyzer-whats-new-1.0>`
+
 .. _mongodb-analyzer-whats-new-1.2:
 
 What's New in 1.2
@@ -39,7 +45,6 @@ New features of the 1.1 {+product+} release include:
 - Support for IndexKeys builders
 
 - Support for Projection builders
-
 
 .. _mongodb-analyzer-whats-new-1.0:
 
