@@ -4,8 +4,6 @@
 What's New
 ==========
 
-.. default-domain:: mongodb
-
 .. contents:: On this page
    :local:
    :backlinks: none
@@ -21,7 +19,8 @@ New features of the 1.2 {+product+} release include:
 
 - Added limited support for builders for Atlas Search.
 - The default LINQ provider version is ``V3`` in driver versions 2.19.0 and higher.
-- On macOS, the ``using MongoDB.Driver.Linq;`` statement is no longer required. 
+- On macOS, the ``using MongoDB.Driver.Linq;`` statement is no longer required to 
+  analyze LINQ expressions. 
 
 .. _mongodb-analyzer-whats-new-1.1:
 
