@@ -23,5 +23,5 @@ query-api = "MongoDB Query API"
 driver-long = "MongoDB .NET driver"
 driver-short = ".NET driver"
 driver-version = "2.19"
-driver-docs = "https://www.mongodb.com/docs/drivers/csharp/{+driver-version+}"
+driver-docs = "https://www.mongodb.com/docs/drivers/csharp/current"
 
