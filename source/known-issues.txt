@@ -25,17 +25,17 @@ The {+product+} provides only partial support for ``Search`` builder
 methods and other Atlas Search features. The {+product+} cannot analyze
 code that uses any of the following features:
 
-- The ``Search.Compound()`` method
-- The ``Search.Range()`` method
-- The ``Search.Equals()`` method with number parameters or parameters of type
+- The ``Compound()`` method
+- The ``Range()`` method
+- The ``Equals()`` method with number parameters or parameters of type
   ``ObjectId`` or ``DateTime``
-- The ``Search.Facet()`` method
-- The ``Search.GeoShape()`` method
-- The ``Search.GeoWithin()`` method
-- The ``Search.MoreLikeThis()`` method
-- The ``Search.Near()`` method with a parameter of type ``DateTime``
-- The ``Search.Wildcard()`` method with multiple field definitions
-- ``Search`` builder methods with parameters of type ``SearchRange``,
+- The ``Facet()`` method
+- The ``GeoShape()`` method
+- The ``GeoWithin()`` method
+- The ``MoreLikeThis()`` method
+- Calling the ``Near()`` method with a parameter of type ``DateTime``
+- Calling the ``Wildcard()`` method with multiple field definitions
+- Calling ``Search`` builder methods with parameters of type ``SearchRange``,
   ``SearchFuzzyOptions``, or ``SearchScoreDefinition``
 - The ``SearchMeta()`` method
 - Integration with ``IFluent``
