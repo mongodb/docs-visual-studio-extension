@@ -38,5 +38,4 @@ code that uses any of the following features:
 - Calling ``Search`` builder methods with parameters of type ``SearchRange``,
   ``SearchFuzzyOptions``, or ``SearchScoreDefinition``
 - The ``SearchMeta()`` method
-- Integration with ``IFluent``
-- Custom analyzers
+- The ``SearchPath`` builder
