@@ -1,5 +1,8 @@
 name = "visual-studio-extension"
 title = "MongoDB Analyzer"
+
+eol = true
+
 toc_landing_pages = [
     "/analyze-code",
 ]
@@ -17,11 +20,16 @@ product-version = "1.0"
 product-version-full = "{+product-version+}.0"
 product-settings-file-constant = "mongodb.analyzer.json"
 product-jira = "https://jira.mongodb.org/browse/VS"
-
 query-api = "MongoDB Query API"
-
 driver-long = "MongoDB .NET driver"
 driver-short = ".NET driver"
 driver-version = "2.19"
 driver-docs = "https://www.mongodb.com/docs/drivers/csharp/current"
+current-url-base = "https://www.mongodb.com/docs/mongodb-analyzer/current"
 
+[[banners]]
+targets = ["*"]
+variant = "info"
+value = """\
+    This version of the documentation is archived and no longer supported. View the `current documentation <{+current-url-base+}/>`__ to learn how to `upgrade your version of the {+product+} <{+current-url-base+}/install/#installation>`__.\
+    """
