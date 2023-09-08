@@ -3,9 +3,7 @@ title = "MongoDB Analyzer"
 
 eol = true
 
-toc_landing_pages = [
-    "/analyze-code",
-]
+toc_landing_pages = ["/analyze-code"]
 
 [constants]
 product = "MongoDB Analyzer"
@@ -21,8 +19,8 @@ product-version-full = "{+product-version+}.0"
 product-settings-file-constant = "mongodb.analyzer.json"
 product-jira = "https://jira.mongodb.org/browse/VS"
 query-api = "MongoDB Query API"
-driver-long = "MongoDB .NET driver"
-driver-short = ".NET driver"
+driver-long = "MongoDB .NET/C# driver"
+driver-short = ".NET/C# driver"
 driver-version = "2.19"
 driver-docs = "https://www.mongodb.com/docs/drivers/csharp/current"
 current-url-base = "https://www.mongodb.com/docs/mongodb-analyzer/current"
