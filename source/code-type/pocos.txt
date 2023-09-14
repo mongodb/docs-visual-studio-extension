@@ -85,9 +85,6 @@ To analyze your POCOs in Visual Studio, perform the following actions:
    word of your class definition to display an information message that contains
    the JSON translation.
 
-Simple POCO Definitions
-~~~~~~~~~~~~~~~~~~~~~~~
-
 Click on the following corresponding tab to see a POCO class definition
 with or without an information message displayed:
 
