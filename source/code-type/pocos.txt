@@ -13,17 +13,20 @@ Analyze POCOs
 Overview
 --------
 
-"Plain Old CLR/Class Objects", or **POCOs**, are simple class objects that do not
+":wikipedia:`Plain Old CLR/Class Objects <Plain_old_CLR_object>`", or **POCOs**, are
+simple class objects that do not
 inherit features from any framework-specific base classes or interfaces.
 
-To learn more about POCOs, see 
-`Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ in the
+To learn more about POCOs, see the
+`Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ page in the
 {+driver-short+} documentation.
 
 Translate into JSON
 -------------------
 
-Use the {+product+} to translate your builder expressions into JSON. 
+Use the {+product+} to translate your POCOs into JSON. The Analyzer supports ``BsonId``,
+``BsonElement``, and other BSON serialization attributes.
+
 Click the following tabs to see an example of a POCO class definition
 and its corresponding JSON translation:
 
@@ -99,5 +102,5 @@ with or without an information message displayed:
    .. tab:: With Information Message
       :tabid: message
 
-      .. figure:: /includes/images/builder-popup.png
+      .. figure:: /includes/images/poco-popup.png
          :alt: Screenshot of POCO definition with an information message displayed in Visual Studio
