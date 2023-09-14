@@ -13,7 +13,7 @@ Analyze POCOs
 Overview
 --------
 
-":wikipedia:`Plain Old CLR/Class Objects <Plain_old_CLR_object>`", or **POCOs**, are
+":wikipedia:`Plain old CLR/class objects <Plain_old_CLR_object>`", or **POCOs**, are
 simple class objects that do not
 inherit features from any framework-specific base classes or interfaces.
 
@@ -24,8 +24,9 @@ To learn more about POCOs, see the
 Translate into JSON
 -------------------
 
-Use the {+product+} to translate your POCOs into JSON. The Analyzer supports ``BsonId``,
-``BsonElement``, and other BSON serialization attributes.
+You can use the {+product+} to preview your POCOs as JSON objects. By previewing your
+POCOs, you can see how BSON serialization attributes, such as ``BsonId`` and
+``BsonElement``, change the shape of your objects.
 
 Click the following tabs to see an example of a POCO class definition
 and its corresponding JSON translation:
