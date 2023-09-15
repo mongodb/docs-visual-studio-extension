@@ -26,7 +26,7 @@ and the `Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ pa
 Preview as JSON
 ---------------
 
-Click the following tabs to see an example of a POCO class definition
+The following code sample shows an example of a POCO class definition
 and its corresponding JSON translation. By previewing your
 POCOs in JSON, you can see how BSON serialization attributes, such as ``BsonId`` and
 ``BsonElement``, change the shape of the resulting BSON during serialization.
