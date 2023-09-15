@@ -81,8 +81,7 @@ by the {+product+}:
    * - | **DefaultLinqVersion**
      - | **Type:** string
        |
-       | **Description:**
-       | The LINQ provider the {+product+} uses.
+       | **Description:** The LINQ provider the {+product+} uses.
          
        .. tip::
 
