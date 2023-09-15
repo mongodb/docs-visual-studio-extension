@@ -148,18 +148,18 @@ by the {+product+}:
        | **Accepted Values**: ``true`` or ``false``
        | **Default**: ``false``
 
-   * - | **PocoAnalysisVerbosity**
-     - | **Type:** string
-       |
-       | **Description:**
-       | Specifies which POCOs the {+product+} previews as JSON. You can set this option 
+   * -  **PocoAnalysisVerbosity**
+     -  **Type:** string
+       
+        **Description:**
+         Specifies which POCOs the {+product+} previews as JSON. You can set this option 
          to one of the following values:
-       |
+       
          - ``"All"``: Preview all POCOS
          - ``"Medium"``: Preview only POCOs that are part of a LINQ or builders expression
            or have BSON attributes
          - ``"None"``: Do not preview POCOs
-       |
+       
        | **Accepted Values**: ``"All"``, ``"Medium"``, or ``"None"``
        | **Default**: ``"Medium"``
    
