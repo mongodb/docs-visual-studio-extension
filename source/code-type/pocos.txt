@@ -13,20 +13,20 @@ Analyze POCOs
 Overview
 --------
 
-":wikipedia:`Plain old CLR/class objects <Plain_old_CLR_object>`", or **POCOs**, are
-simple class objects that do not
+Plain old CLR object, or plain old class objects (POCO), are
+simple class objects that don't
 inherit features from any framework-specific base classes or interfaces.
 
-To learn more about POCOs, see the
-`Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ page in the
+To learn more about POCOs, see the :wikipedia:`POCOs page on Wikipedia <Plain_old_CLR_object>`
+and the `Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ page in the
 {+driver-short+} documentation.
 
-Translate into JSON
--------------------
+Preview as JSON
+---------------
 
 You can use the {+product+} to preview your POCOs as JSON objects. By previewing your
 POCOs, you can see how BSON serialization attributes, such as ``BsonId`` and
-``BsonElement``, change the shape of your objects.
+``BsonElement``, change the shape of the resulting BSON. 
 
 Click the following tabs to see an example of a POCO class definition
 and its corresponding JSON translation:
@@ -36,32 +36,34 @@ and its corresponding JSON translation:
    .. tab:: POCO
       :tabid: poco
 
-      .. code-block:: csharp
+      .. io-code-block::
+         :copyable: false
 
-         class Order
-         {
-           [BsonId]
-           public int OrderNumber { get; set; }
+         .. input::
+            :language: csharp
 
-           [BsonElement("customer_id")]
-           public int CustomerId { get; set; }
+            class Order
+            {
+              [BsonId]
+              public int OrderNumber { get; set; }
 
-           public string Date { get; set; }
+              [BsonElement("customer_id")]
+              public int CustomerId { get; set; }
 
-           [BsonIgnore]
-           public string Email { get; set; }
-         }
+              public string Date { get; set; }
 
-   .. tab:: JSON 
-      :tabid: json
+             [BsonIgnore]
+             public string Email { get; set; }
+            }
 
-      .. code-block:: json
+         .. output::
+            :language: json
 
-         {
-           "_id": "6783456",
-           "customer_id": 678234),
-           "Date": "06/03/2023"
-         }
+            {
+              "_id": "6783456",
+              "customer_id": 678234),
+              "Date": "06/03/2023"
+            }
 
 .. tip:: Sample Data
 
@@ -72,17 +74,18 @@ and its corresponding JSON translation:
    random value that matches the property's data type.
 
    For a list of property names with sample values, see the
-   `{+product+} GitHub repo. <{+product-source-repo+}/blob/main/src/MongoDB.Analyzer/Core/Poco/Data/data.json>`__
+   `JSON sample value file <{+product-source-repo+}/blob/main/src/MongoDB.Analyzer/Core/Poco/Data/data.json>`__
+   in the {+product+} GitHub repo.
 
-Analyze POCOs in Visual Studio
+Preview POCOs in Visual Studio
 ------------------------------
 
-To analyze your POCOs in Visual Studio, perform the following actions:
+To preview your POCOs in Visual Studio, perform the following actions:
 
-1. Install the {+product+} as described in the :ref:`Install <mongodb-analyzer-install>`
+1. Install the {+product+} as described in the :ref:`mongodb-analyzer-install`
    guide.
 #. Define a POCO class.
-#. Move your mouse over the :guilabel:`...` annotation beneath the first
+#. Move your mouse over the :guilabel:`...` ellipsis annotation beneath the first
    word of your class definition to display an information message that contains
    the JSON translation.
 
@@ -102,3 +105,9 @@ with or without an information message displayed:
 
       .. figure:: /includes/images/poco-popup.png
          :alt: Screenshot of POCO definition with an information message displayed in Visual Studio
+
+      .. tip:: Rule ID
+
+         The information message begins with the Analyzer Rule ID that generated the 
+         popup. In the previous example, the Rule ID is ``MAPoco1001``, indicating
+         the POCO is valid.

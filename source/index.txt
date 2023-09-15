@@ -28,7 +28,7 @@ code:
 
 - How your code translates into the {+query-api+}
 - If your code includes unsupported LINQ or builder expressions
-- How BSON serialization attributes change your POCO objects
+- How your POCOs serialize to JSON 
 
 The {+product+} can analyze the following groups of {+driver-short+} expressions and 
 classes:

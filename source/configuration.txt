@@ -90,8 +90,8 @@ by the {+product+}:
           :ref:`Analyze Your Code <mongodb-analyzer-analyze-linq>`
           page.
 
-       | **Default**: ``"V2"``
        | **Accepted Values**: ``"V2"`` or ``"V3"``
+       | **Default**: ``"V2"``
 
    * - | **EnableVariableTracking**
      - | **Type:** boolean
@@ -105,37 +105,8 @@ by the {+product+}:
           :ref:`Analyze Your Code <mongodb-analyzer-analyze-builders>`
           page.
 
+       | **Accepted Values**: ``true`` or ``false``
        | **Default**: ``true``
-       | **Accepted Values**: ``true`` or ``false``
-
-   * - | **OutputDriverVersion**
-     - | **Type:** boolean
-       |
-       | **Description:**
-       | Specifies if the {+product+} includes your {+driver-short+} version in diagnostic messages.
-       |
-       | **Default**: ``false``
-       | **Accepted Values**: ``true`` or ``false``
-
-   * - | **OutputInternalExceptions**
-     - | **Type:** boolean
-       |
-       | **Description:**
-       | Specifies if the {+product+} includes internal exceptions in diagnostic messages.
-       |
-       | **Default**: ``false``
-       | **Accepted Values**: ``true`` or ``false``
-
-   * - | **OutputInternalLogsToFile**
-     - | **Type:** boolean
-       |
-       | **Description:**
-       | Specifies if the {+product+} writes its internal logs to a file.
-
-       .. include:: includes/logging-admonition.rst       
-
-       | **Default**: ``false``
-       | **Accepted Values**: ``true`` or ``false``
 
    * - | **LogFileName**
      - | **Type:** string
@@ -145,8 +116,53 @@ by the {+product+}:
        
        .. include:: includes/logging-admonition.rst       
 
-       | **Default**: ``""``
        | **Accepted Values**: A valid file path
+       | **Default**: ``""``
+
+   * - | **OutputDriverVersion**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} includes your {+driver-short+} version in diagnostic messages.
+       |
+       | **Accepted Values**: ``true`` or ``false``
+       | **Default**: ``false``
+
+   * - | **OutputInternalExceptions**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} includes internal exceptions in diagnostic messages.
+       |
+       | **Accepted Values**: ``true`` or ``false``
+       | **Default**: ``false``
+
+   * - | **OutputInternalLogsToFile**
+     - | **Type:** boolean
+       |
+       | **Description:**
+       | Specifies if the {+product+} writes its internal logs to a file.
+
+       .. include:: includes/logging-admonition.rst       
+
+       | **Accepted Values**: ``true`` or ``false``
+       | **Default**: ``false``
+
+   * - | **PocoAnalysisVerbosity**
+     - | **Type:** string
+       |
+       | **Description:**
+       | Specifies which POCOs the {+product+} previews as JSON. You can set this option 
+         to one of the following values:
+
+       | - ``"All"``: Preview all POCOS
+       | - ``"Medium"``: Preview only POCOs that are part of a LINQ or builders expression
+           or have BSON attributes
+       | - ``"None"``: Do not preview POCOs
+       |
+       | **Accepted Values**: ``"All"``, ``"Medium"``, or ``"None"``
+       | **Default**: ``"Medium"``
+   
    * - | **SendTelemetry**
      - | **Type:** boolean
        |
@@ -160,9 +176,8 @@ by the {+product+}:
           :ref:`<mongodb-analyzer-configuration-telemetry>`
           section of this guide.
 
-       | **Default**: ``true``
        | **Accepted Values**: ``true`` or ``false``
-
+       | **Default**: ``true``
 
 To learn more about the configuration options the {+product+} supports,
 see the :github:`{+product+} source code </master/src/MongoDB.Analyzer/Core/Settings/SettingsHelper.cs>`.

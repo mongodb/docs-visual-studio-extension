@@ -22,7 +22,7 @@ command from the root directory of your .NET project:
 
 .. code-block:: shell
 
-   dotnet add package MongoDB.Analyzer -v 1.3.0
+   dotnet add package {+product-package-name+} -v {+product-version-full+} 
 
 To view the NuGet page for the {+product+}, see 
 `{+product-package-name+} <{+product-nuget-link+}>`__ on NuGet Gallery.
