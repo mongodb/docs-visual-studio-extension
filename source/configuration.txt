@@ -95,8 +95,8 @@ by the {+product+}:
    * - | **EnableVariableTracking**
      - | **Type:** boolean
        |
-       | **Description:**
-       | Specifies if the {+product+} tracks and composes builder expression variables.
+       | **Description:** Specifies if the {+product+} tracks and composes builder
+         expression variables.
        
        .. tip::
 
@@ -110,8 +110,8 @@ by the {+product+}:
    * - | **LogFileName**
      - | **Type:** string
        |
-       | **Description:**
-       | Specifies the path to which the {+product+} writes its internal logs.
+       | **Description:** Specifies the path to which the {+product+} writes its
+         internal logs.
        
        .. include:: includes/logging-admonition.rst       
 
@@ -121,8 +121,8 @@ by the {+product+}:
    * - | **OutputDriverVersion**
      - | **Type:** boolean
        |
-       | **Description:**
-       | Specifies if the {+product+} includes your {+driver-short+} version in diagnostic messages.
+       | **Description:** Specifies if the {+product+} includes your {+driver-short+}
+         version in diagnostic messages.
        |
        | **Accepted Values**: ``true`` or ``false``
        | **Default**: ``false``
@@ -130,8 +130,8 @@ by the {+product+}:
    * - | **OutputInternalExceptions**
      - | **Type:** boolean
        |
-       | **Description:**
-       | Specifies if the {+product+} includes internal exceptions in diagnostic messages.
+       | **Description:** Specifies if the {+product+} includes internal exceptions in
+         diagnostic messages.
        |
        | **Accepted Values**: ``true`` or ``false``
        | **Default**: ``false``
@@ -139,20 +139,18 @@ by the {+product+}:
    * - | **OutputInternalLogsToFile**
      - | **Type:** boolean
        |
-       | **Description:**
-       | Specifies if the {+product+} writes its internal logs to a file.
+       | **Description:** Specifies if the {+product+} writes its internal logs to a file.
 
        .. include:: includes/logging-admonition.rst       
 
        | **Accepted Values**: ``true`` or ``false``
        | **Default**: ``false``
 
-   * - **PocoAnalysisVerbosity**
-     - **Type:** string
-       
-       **Description:**
-       | Specifies which POCOs the {+product+} previews as JSON. You can set this option 
-       to one of the following values:
+   * - | **PocoAnalysisVerbosity**
+     - | **Type:** string
+       |
+       | **Description:** Specifies which POCOs the {+product+} previews as JSON. You can
+         set this option to one of the following values:
        
        - ``"All"``: Preview all POCOS
        - ``"Medium"``: Preview only POCOs that are part of a LINQ or builders expression
@@ -165,9 +163,8 @@ by the {+product+}:
    * - | **SendTelemetry**
      - | **Type:** boolean
        |
-       | **Description:**
-       | Specifies if the {+product+} collects and sends anonymized information
-         to MongoDB Inc. to improve products.
+       | **Description:** Specifies if the {+product+} collects and sends anonymized
+         information to MongoDB Inc. to improve products.
 
        .. tip::
 
