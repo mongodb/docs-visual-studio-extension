@@ -152,7 +152,7 @@ by the {+product+}:
      - **Type:** string
        
        **Description:**
-       Specifies which POCOs the {+product+} previews as JSON. You can set this option 
+       | Specifies which POCOs the {+product+} previews as JSON. You can set this option 
        to one of the following values:
        
        - ``"All"``: Preview all POCOS
