@@ -31,39 +31,34 @@ and its corresponding JSON translation. By previewing your
 POCOs in JSON, you can see how BSON serialization attributes, such as ``BsonId`` and
 ``BsonElement``, change the shape of the resulting BSON during serialization.
 
-.. tabs::
+.. io-code-block::
+   :copyable: false
 
-   .. tab:: POCO
-      :tabid: poco
+   .. input::
+      :language: csharp
 
-      .. io-code-block::
-         :copyable: false
+      class Order
+      {
+        [BsonId]
+        public int OrderNumber { get; set; }
 
-         .. input::
-            :language: csharp
+        [BsonElement("customer_id")]
+        public int CustomerId { get; set; }
 
-            class Order
-            {
-              [BsonId]
-              public int OrderNumber { get; set; }
+        public string Date { get; set; }
 
-              [BsonElement("customer_id")]
-              public int CustomerId { get; set; }
+       [BsonIgnore]
+       public string Email { get; set; }
+      }
 
-              public string Date { get; set; }
+   .. output::
+      :language: json
 
-             [BsonIgnore]
-             public string Email { get; set; }
-            }
-
-         .. output::
-            :language: json
-
-            {
-              "_id": "6783456",
-              "customer_id": 678234),
-              "Date": "06/03/2023"
-            }
+      {
+        "_id": "6783456",
+        "customer_id": 678234),
+        "Date": "06/03/2023"
+      }
 
 .. tip:: Sample Data
 
