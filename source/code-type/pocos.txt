@@ -13,9 +13,11 @@ Analyze POCOs
 Overview
 --------
 
-Plain old CLR object, or plain old class objects (POCO), are
+Plain old CLR objects, or plain old class objects (POCOs), are
 simple class objects that don't
 inherit features from any framework-specific base classes or interfaces.
+If your application uses POCOs, you can use the {+product+} to preview them as JSON
+objects.
 
 To learn more about POCOs, see the :wikipedia:`POCOs page on Wikipedia <Plain_old_CLR_object>`
 and the `Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ page in the
@@ -24,12 +26,10 @@ and the `Work with POCOs <{+driver-docs+}/fundamentals/data-formats/poco/>`__ pa
 Preview as JSON
 ---------------
 
-You can use the {+product+} to preview your POCOs as JSON objects. By previewing your
-POCOs, you can see how BSON serialization attributes, such as ``BsonId`` and
-``BsonElement``, change the shape of the resulting BSON. 
-
 Click the following tabs to see an example of a POCO class definition
-and its corresponding JSON translation:
+and its corresponding JSON translation. By previewing your
+POCOs in JSON, you can see how BSON serialization attributes, such as ``BsonId`` and
+``BsonElement``, change the shape of the resulting BSON during serialization.
 
 .. tabs::
 
@@ -108,6 +108,6 @@ with or without an information message displayed:
 
       .. tip:: Rule ID
 
-         The information message begins with the Analyzer Rule ID that generated the 
+         The information message begins with the {+product+} Rule ID that generated the 
          popup. In the previous example, the Rule ID is ``MAPoco1001``, indicating
          the POCO is valid.
