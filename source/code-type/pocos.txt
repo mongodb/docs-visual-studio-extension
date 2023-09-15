@@ -80,7 +80,7 @@ To preview your POCOs in Visual Studio, perform the following actions:
 1. Install the {+product+} as described in the :ref:`mongodb-analyzer-install`
    guide.
 #. Define a POCO class.
-#. Move your mouse over the :guilabel:`...` ellipsis annotation beneath the first
+#. Move your cursor over the :guilabel:`...` ellipsis annotation beneath the first
    word of your class definition to display an information message that contains
    the JSON translation.
 
