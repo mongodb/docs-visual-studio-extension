@@ -152,7 +152,7 @@ by the {+product+}:
        | **Description:** Specifies which POCOs the {+product+} previews as JSON. You can
          set this option to one of the following values:
        
-       - ``"All"``: Preview all POCOS
+       - ``"All"``: Preview all POCOs
        - ``"Medium"``: Preview only POCOs that are part of a LINQ or builders expression
          or have BSON attributes
        - ``"None"``: Do not preview POCOs

@@ -47,16 +47,16 @@ POCOs in JSON, you can see how BSON serialization attributes, such as ``BsonId``
 
         public string Date { get; set; }
 
-       [BsonIgnore]
-       public string Email { get; set; }
+        [BsonIgnore]
+        public string Email { get; set; }
       }
 
    .. output::
       :language: json
 
       {
-        "_id": "6783456",
-        "customer_id": 678234),
+        "_id": 6783456,
+        "customer_id": 678234,
         "Date": "06/03/2023"
       }
 
