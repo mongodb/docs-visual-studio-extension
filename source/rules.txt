@@ -1,0 +1,61 @@
+.. _mongodb-analyzer-rules:
+
+=========================
+Rules and Message Content
+=========================
+
+.. contents:: On this page
+   :local:
+   :backlinks: none
+   :depth: 2
+   :class: singlecol
+
+Overview
+--------
+
+In this guide, you can learn about the {+product+} rules and attached
+messages. A rule evaluates different parts of your code and returns a
+message if a specific condition is met.
+
+For example, the Analyzer might apply a rule if it detects a LINQ
+expression, which causes your IDE to display a message that contains the
+equivalent Query API expression. Each rule has a severity level of
+``Info`` or ``Warning`` that impacts where the message might be recorded.
+
+Rule Descriptions
+-----------------
+
+The following sections describe each {+product+} rule, including the
+rule category, severity level, and description of the corresponding
+message. Each section also includes an example message.
+
+MABuilders1001
+~~~~~~~~~~~~~~
+
+The ``MABuilders1001`` rule evaluates your code for builders expressions
+and triggers a message that contains the equivalent Query API
+expression.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - **Severity**
+     - **Notes**
+
+   * - ``MongoDB.Analyzer.Builders``
+   * - ``Info``
+   * - None
+
+This code triggers the ``MABuilders1001`` rule to display a message that
+shows the equivalent Query API expression:
+
+.. code-block:: csharp
+   
+   var filter = Builders<Book>.Filter.Eq(b => b.Genre, "Theory") & 
+       Builders<Book>.Filter.Gte(b => b.Price, 10);
+
+.. figure:: /includes/images/MABuilders1001-rule.png
+   :alt: Screenshot of builder expression with MABuilders1001 rule message
