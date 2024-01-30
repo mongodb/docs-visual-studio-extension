@@ -193,3 +193,155 @@ message:
 
    To learn more about LINQ expressions, see the
    :ref:`mongodb-analyzer-analyze-linq` guide.
+
+MALinq2002
+~~~~~~~~~~
+
+The ``MALinq2002`` rule detects if an expression is supported only in
+LINQ3 and displays a message that contains the expression.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.LINQ``
+
+   * - **Severity**
+     - ``Warning``
+
+   * - **Notes**
+     - | This rule might apply differently depending on the value of
+       | your ``DefaultLinqVersion`` configuration setting. To learn more,
+       | see the :ref:`Analyzer Configuration Options <mongodb-analyzer-configuration-options>`.
+       |
+       | To view examples of supported LINQ3 expressions, see the
+       | `source code testing files <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinq2.cs>`__.
+
+The following code triggers the ``MALinq2002`` rule to display a message that
+shows the supported LINQ3 expression:
+
+.. code-block:: csharp
+   
+   var results = queryableColl
+       .Where(b => b.Price + 1 == 21)
+       .Where(b => "Re-release: " + b.Title == "Re-release: Siddhartha");
+
+The following image displays the ``MALinq2002`` rule and information
+message:
+
+.. figure:: /includes/images/MALinq2002-rule.png
+   :alt: Screenshot of LINQ expression with MALinq2002 rule message
+
+.. tip::
+
+   To learn more about LINQ expressions, see the
+   :ref:`mongodb-analyzer-analyze-linq` guide.
+
+MAPoco1001
+~~~~~~~~~~
+
+The ``MAPoco1001`` rule evaluates your code for POCO declarations
+and triggers a message that contains the JSON representation of a sample
+instance.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.Poco``
+
+   * - **Severity**
+     - ``Info``
+
+   * - **Notes**
+     - This rule might apply differently depending on the value of
+       your ``PocoAnalysisVerbosity`` configuration setting. To learn more,
+       see the :ref:`Analyzer Configuration Options <mongodb-analyzer-configuration-options>`.
+
+The following code triggers the ``MAPoco1001`` rule to display a message that
+shows the JSON representation of a sample POCO:
+
+.. code-block:: csharp
+   
+   public class Person
+   {
+      [BsonId]
+      public int Id { get; set; }
+      public string FirstName { get; set; }
+      public string LastName { get; set; }
+      public int Age { get; set; }
+      [BsonIgnore]
+      public double Income { get; set; }
+   }
+
+The following image displays the ``MAPoco1001`` rule and information
+message:
+
+.. figure:: /includes/images/MAPoco1001-rule.png
+   :alt: Screenshot of builder expression with MAPoco1001 rule message
+
+.. tip::
+
+   To learn more about POCO analysis, see the
+   :ref:`mongodb-analyzer-analyze-pocos` guide.
+
+   To learn more about POCO annotations, see the `POCOs guide
+   <{+driver-docs+}/fundamentals/serialization/poco/>`__
+   in the {+driver-short+} documentation.
+
+MAPoco2001
+~~~~~~~~~~
+
+The ``MAPoco2001`` rule evaluates your code for unsupported POCO
+declarations.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.Poco``
+
+   * - **Severity**
+     - ``Warning``
+
+   * - **Notes**
+     - | This rule might apply differently depending on the value of
+       | your ``PocoAnalysisVerbosity`` configuration setting. To learn more,
+       | see the :ref:`Analyzer Configuration Options <mongodb-analyzer-configuration-options>`.
+       |
+       | To view examples of unsupported POCO declarations, see the
+       | `source code testing files <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Poco/NotSupportedPocoClassDeclarations.cs>`__.
+
+The following code triggers the ``MAPoco2001`` rule to display a message that
+shows the unsupported POCO declaration:
+
+.. code-block:: csharp
+   
+   public class Appointment
+   {
+      [BsonDateTimeOptions(DateOnly = true, Kind = DateTimeKind.Local)]
+      public decimal Date { get; set; }
+      public string Doctor { get; set; }
+   }
+
+The following image displays the ``MAPoco2001`` rule and information
+message:
+
+.. figure:: /includes/images/MAPoco2001-rule.png
+   :alt: Screenshot of builder expression with MAPoco2001 rule message
+
+.. tip::
+
+   To learn more about POCO analysis, see the
+   :ref:`mongodb-analyzer-analyze-pocos` guide.
+
+   To learn more about POCO annotations, see the `POCOs guide
+   <{+driver-docs+}/fundamentals/serialization/poco/>`__
+   in the {+driver-short+} documentation.
+   
