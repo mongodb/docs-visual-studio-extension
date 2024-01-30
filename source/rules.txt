@@ -42,12 +42,13 @@ expression.
    :widths: 35 65
 
    * - **Category**
-     - **Severity**
-     - **Notes**
+     - ``MongoDB.Analyzer.Builders``
 
-   * - ``MongoDB.Analyzer.Builders``
-   * - ``Info``
-   * - None
+   * - **Severity**
+     - ``Info``
+
+   * - **Notes**
+     - None
 
 This code triggers the ``MABuilders1001`` rule to display a message that
 shows the equivalent Query API expression:
