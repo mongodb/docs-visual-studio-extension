@@ -4,7 +4,3 @@ define: versions v1.0 v1.1 v1.2 v1.3 master
 
 raw: ${prefix}/ -> ${base}/current/
 raw: ${prefix}/master -> ${base}/upcoming/
-
-# Redirects for Analyzer Rules
-[*-master]: ${prefix}/${version}/rules/ -> ${base}/${version}/
-raw: ${prefix}/current/rules/ -> ${base}/current/
