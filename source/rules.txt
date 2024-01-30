@@ -50,7 +50,7 @@ expression.
    * - **Notes**
      - None
 
-This code triggers the ``MABuilders1001`` rule to display a message that
+The following code triggers the ``MABuilders1001`` rule to display a message that
 shows the equivalent Query API expression:
 
 .. code-block:: csharp
@@ -58,5 +58,138 @@ shows the equivalent Query API expression:
    var filter = Builders<Book>.Filter.Eq(b => b.Genre, "Theory") & 
        Builders<Book>.Filter.Gte(b => b.Price, 10);
 
+The following image displays the ``MABuilders1001`` rule and information
+message:
+
 .. figure:: /includes/images/MABuilders1001-rule.png
    :alt: Screenshot of builder expression with MABuilders1001 rule message
+
+.. tip::
+
+   To learn more about builders expressions, see the
+   :ref:`mongodb-analyzer-analyze-builders` guide.
+
+MABuilders2001
+~~~~~~~~~~~~~~
+
+The ``MABuilders2001`` rule detects unsupported builders expressions and
+displays a message that contains the unsupported expression.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.Builders``
+
+   * - **Severity**
+     - ``Warning``
+
+   * - **Notes**
+     - To view examples of unsupported builders expressions, see the
+       `source code testing files <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Builders/NotSupportedBuildersExpressions.cs>`__.
+
+The following code triggers the ``MABuilders2001`` rule to display a message that
+shows the unsupported builders expression:
+
+.. code-block:: csharp
+   
+   var filter = Builders<Book>.Filter.Eq(u => u.Price + 2, 1);
+
+The following image displays the ``MABuilders2001`` rule and information
+message:
+
+.. figure:: /includes/images/MABuilders2001-rule.png
+   :alt: Screenshot of builder expression with MABuilders2001 rule message
+   
+.. tip::
+
+   To learn more about builders expressions, see the
+   :ref:`mongodb-analyzer-analyze-builders` guide.
+
+MALinq1001
+~~~~~~~~~~
+
+The ``MALinq1001`` rule evaluates your code for LINQ expressions
+and triggers a message that contains the equivalent Query API
+expression.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.LINQ``
+
+   * - **Severity**
+     - ``Info``
+
+   * - **Notes**
+     - This rule might apply differently depending on the value of
+       your ``DefaultLinqVersion`` configuration setting. To learn more,
+       see the :ref:`Analyzer Configuration Options <mongodb-analyzer-configuration-options>`.
+
+The following code triggers the ``MALinq1001`` rule to display a message that
+shows the equivalent Query API expression:
+
+.. code-block:: csharp
+   
+   var results = queryableColl
+       .Where(b => b.Genre == "Theory")
+       .OrderBy(b => b.Price);
+
+The following image displays the ``MALinq1001`` rule and information
+message:
+
+.. figure:: /includes/images/MALinq1001-rule.png
+   :alt: Screenshot of LINQ expression with MALinq1001 rule message
+
+.. tip::
+
+   To learn more about LINQ expressions, see the
+   :ref:`mongodb-analyzer-analyze-linq` guide.
+
+MALinq2001
+~~~~~~~~~~
+
+The ``MALinq2001`` rule detects unsupported LINQ expressions and
+displays a message that contains the unsupported expression.
+
+.. list-table::
+   :header-rows: 0
+   :stub-columns: 1
+   :widths: 35 65
+
+   * - **Category**
+     - ``MongoDB.Analyzer.LINQ``
+
+   * - **Severity**
+     - ``Warning``
+
+   * - **Notes**
+     - | This rule might apply differently depending on the value of
+       | your ``DefaultLinqVersion`` configuration setting. To learn more,
+       | see the :ref:`Analyzer Configuration Options <mongodb-analyzer-configuration-options>`.
+       |
+       | To view examples of unsupported LINQ expressions, see the
+       | `source code testing files <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Linq/NotSupportedLinqExpressions.cs>`__.
+
+The following code triggers the ``MALinq2001`` rule to display a message that
+shows the unsupported LINQ expression:
+
+.. code-block:: csharp
+   
+   var results = queryableColl.Where(b => b.GetHashCode() == 1);
+
+The following image displays the ``MALinq2001`` rule and information
+message:
+
+.. figure:: /includes/images/MALinq2001-rule.png
+   :alt: Screenshot of LINQ expression with MALinq2001 rule message
+
+.. tip::
+
+   To learn more about LINQ expressions, see the
+   :ref:`mongodb-analyzer-analyze-linq` guide.
