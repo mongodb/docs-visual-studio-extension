@@ -319,8 +319,9 @@ serialization settings specified on a POCO declaration.
        | To view examples of unsupported POCO declarations, see the
        | `source code testing files <{+product-source-repo+}/blob/main/tests/MongoDB.Analyzer.Tests.Common.TestCases/Poco/NotSupportedPocoClassDeclarations.cs>`__.
 
-The following code triggers the ``MAPoco2001`` rule to display a message that
-shows the unsupported POCO declaration:
+The following code triggers the ``MAPoco2001`` rule to display a message
+that explains that the code includes an invalid serialization setting on the ``Date``
+field:
 
 .. code-block:: csharp
    
