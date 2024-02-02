@@ -73,7 +73,7 @@ MABuilders2001
 ~~~~~~~~~~~~~~
 
 The ``MABuilders2001`` rule detects unsupported builders expressions and
-displays a message that contains the unsupported expression.
+displays a translation error of the unsupported expression.
 
 .. list-table::
    :header-rows: 0
@@ -95,7 +95,7 @@ shows the unsupported builders expression:
 
 .. code-block:: csharp
    
-   var filter = Builders<Book>.Filter.Eq(u => u.Price + 2, 1);
+   var filter = Builders<Book>.Filter.Eq(b => b.Price + 2, 1);
 
 The following image displays the ``MABuilders2001`` rule and information
 message:
@@ -155,7 +155,7 @@ MALinq2001
 ~~~~~~~~~~
 
 The ``MALinq2001`` rule detects unsupported LINQ expressions and
-displays a message that contains the unsupported expression.
+displays a translation error of the unsupported expression.
 
 .. list-table::
    :header-rows: 0
@@ -198,7 +198,7 @@ MALinq2002
 ~~~~~~~~~~
 
 The ``MALinq2002`` rule detects if an expression is supported only in
-LINQ3 and displays a message that contains the expression.
+LINQ3 and displays a message that contains the equivalent Query API expression.
 
 .. list-table::
    :header-rows: 0
@@ -244,7 +244,8 @@ MAPoco1001
 
 The ``MAPoco1001`` rule evaluates your code for POCO declarations
 and triggers a message that contains the JSON representation of a sample
-instance.
+instance. This rule evaluates some BSON serialization annotations such
+as ``BsonIgnore`` and ``BsonElement``.
 
 .. list-table::
    :header-rows: 0
@@ -296,8 +297,8 @@ message:
 MAPoco2001
 ~~~~~~~~~~
 
-The ``MAPoco2001`` rule evaluates your code for unsupported POCO
-declarations.
+The ``MAPoco2001`` rule evaluates your code for unsupported
+serialization settings specified on a POCO declaration.
 
 .. list-table::
    :header-rows: 0
