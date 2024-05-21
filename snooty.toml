@@ -1,5 +1,5 @@
 name = "visual-studio-extension"
-title = "MongoDB Analyzer"
+title = "MongoDB C# Analyzer"
 toc_landing_pages = ["/analyze-code"]
 
 [constants]
