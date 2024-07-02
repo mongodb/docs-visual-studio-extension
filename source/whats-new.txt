@@ -23,6 +23,8 @@ Learn what's new in:
 What's New in 1.4
 -----------------
 
+New features of the 1.4 {+product+} release include:
+
 - Support for builders defined within variables. For example, the {+product-short+}
   analyzes the second line in the following code:
 
