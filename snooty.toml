@@ -30,7 +30,5 @@ current-url-base = "https://www.mongodb.com/docs/mongodb-analyzer/current/"
 targets = ["*"]
 variant = "info"
 value = """\
-    This version of the documentation is archived and no longer supported. View the
-    `current documentation <{+current-url-base+}>`__ to learn how to
-    `upgrade your version of the {+product+} <{+current-url-base+}install/#installation>`__.\
+    This version of the documentation is archived and no longer supported. View the `current documentation <{+current-url-base+}>`__ to learn how to `upgrade your version of the {+product+} <{+current-url-base+}install/#installation>`__.\
     """
