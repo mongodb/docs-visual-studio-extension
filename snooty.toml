@@ -2,6 +2,8 @@ name = "visual-studio-extension"
 title = "MongoDB C# Analyzer"
 toc_landing_pages = ["/analyze-code"]
 
+eol = true
+
 [constants]
 product = "MongoDB C# Analyzer"
 product-source-repo = "https://github.com/mongodb/mongo-csharp-analyzer"
@@ -21,3 +23,14 @@ query-api = "MongoDB Query API"
 driver-long = "MongoDB .NET/C# driver"
 driver-short = ".NET/C# driver"
 driver-docs = "https://www.mongodb.com/docs/drivers/csharp/current"
+
+current-url-base = "https://www.mongodb.com/docs/mongodb-analyzer/current/"
+
+[[banners]]
+targets = ["*"]
+variant = "info"
+value = """\
+    This version of the documentation is archived and no longer supported. View the
+    `current documentation <{+current-url-base+}>`__ to learn how to
+    `upgrade your version of the {+product+} <{+current-url-base+}install/#installation>`__.\
+    """
