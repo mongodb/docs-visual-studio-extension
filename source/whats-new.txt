@@ -12,7 +12,7 @@ What's New
 
 Learn what's new in:
 
-* :ref:`Version 1.5 <mongodb-analyser-whats-new-1.5>`
+* :ref:`Version 1.5 <mongodb-analyzer-whats-new-1.5>`
 * :ref:`Version 1.4 <mongodb-analyzer-whats-new-1.4>`
 
 .. _mongodb-analyzer-whats-new-1.5:
