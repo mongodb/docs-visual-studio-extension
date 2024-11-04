@@ -12,12 +12,12 @@
 
    Installation </install>
    Analyze Your Code </analyze-code>
-   Rules and Message Content </rules>
+   Rules & Message Content </rules>
    Configuration </configuration>
    Known Issues </known-issues>
    FAQ </faq>
    What's New </whats-new>
-   Issues and Help </issues-and-help>
+   Issues & Help </issues-and-help>
    Source Code <{+product-source-repo+}>
 
 Overview
