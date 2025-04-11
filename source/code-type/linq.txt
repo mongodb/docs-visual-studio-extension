@@ -146,7 +146,7 @@ Unsupported LINQ Expressions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If your LINQ expression is not supported, the {+product-short+} outputs a
-``NotSupportedLinqExpression`` warning.
+``MALinq2001`` warning.
 
 Click the following tabs to see a code snippet containing an unsupported LINQ expression
 and the corresponding warning message displayed by the {+product-short+}:
