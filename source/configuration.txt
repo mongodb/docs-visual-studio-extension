@@ -33,7 +33,7 @@ To configure the {+product-short+}, perform the following actions:
 
 #. Add your configuration to your ``{+product-settings-file-constant+}`` file.
 
-   The following sample configuration disables the {+product-short+} variable tracking:
+   The following sample configuration disables variable tracking:
 
    .. code-block:: json
 
@@ -106,11 +106,11 @@ by the {+product-short+}:
      - | **Type:** string
        |
        | **Description:** Specifies which LINQ expressions the {+product-short+}
-       analyzes. You can set this option to one of the following values:
+         analyzes. You can set this option to one of the following values:
        
        - ``"All"``: Analyze all LINQ expressions, except system collections and arrays
        - ``"Medium"``: Analyze all LINQ expressions, except for system
-         collections and arrays, in files that include MongoDB.Driver and
+         collections and arrays, in files that include ``MongoDB.Driver`` and
          its nested namespaces only
        - ``"None"``: Do not analyze LINQ expressions
        
