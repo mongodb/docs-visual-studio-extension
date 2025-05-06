@@ -116,7 +116,7 @@ by the {+product-short+}:
        
        .. important::
 
-          The ``LinqAnalysisVerbosity`` configuration option is only available for {+product-short+} v2.0 and above.
+          The ``LinqAnalysisVerbosity`` configuration option is available only in {+product-short+} v2.0 and later.
        
        | **Accepted Values**: ``"All"``, ``"Medium"``, or ``"None"``
        | **Default**: ``"Medium"``
