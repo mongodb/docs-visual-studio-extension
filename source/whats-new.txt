@@ -25,7 +25,7 @@ The 2.0 {+product+} release includes the following features,
 improvements, and fixes:
 
 - Supports only {+driver-short+} v3.0 and higher.
-- Drops support for the ``MALinq2002``rule, since {+driver-short+} v3.0
+- Drops support for the ``MALinq2002`` rule, since {+driver-short+} v3.0
   removes the ``LINQ2`` provider.
 - Drops support for ``IMongoQueryable``. As a result, the {+product-short+}
   attempts to analyze each ``IQueryable``, except for system collections and
