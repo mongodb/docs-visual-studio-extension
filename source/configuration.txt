@@ -16,12 +16,6 @@ Overview
 Learn how to configure the {+product-short+} in your .NET project and what
 configuration options are available.
 
-.. important:: Configuration for v2.0 and Above
-
-  Configuration is only available for {+product-short+} v2.0 and above.
-  For more information about different versions of {+product-short+}, see the
-  :ref:`What's New <mongodb-analyzer-changelog>` page.
-
 Configuration
 -------------
 
@@ -119,6 +113,10 @@ by the {+product-short+}:
          collections and arrays, in files that include ``MongoDB.Driver`` and
          its nested namespaces only
        - ``"None"``: Do not analyze LINQ expressions
+       
+       .. important::
+
+          The ``LinqAnalysisVerbosity`` configuration option is only available for {+product-short+} v2.0 and above.
        
        | **Accepted Values**: ``"All"``, ``"Medium"``, or ``"None"``
        | **Default**: ``"Medium"``
