@@ -28,6 +28,5 @@ driver-docs = "https://www.mongodb.com/docs/drivers/csharp/current"
 targets = ["*"]
 variant = "info"
 value = """\
-    This version of the documentation is archived and no longer supported. View the `current documentation <https://www.mongodb.com/docs/mongodb-analyzer/current/>`__
-    to learn how to `install supported versions of the {+product+} <https://www.mongodb.com/docs/mongodb-analyzer/current/install/>`__.\
+    This version of the documentation is archived and no longer supported. View the `current documentation <https://www.mongodb.com/docs/mongodb-analyzer/current/>`__ to learn how to `install supported versions of the {+product+} <https://www.mongodb.com/docs/mongodb-analyzer/current/install/>`__.\
     """
