@@ -1,16 +1,4 @@
-# Pull Request Info
+The source for the C# Analyzer documentation has been moved to the docs-mongodb-internal repo:
+https://github.com/10gen/docs-mongodb-internal/tree/main/content/mongodb-analyzer
 
-[PR Reviewing Guidelines](https://github.com/mongodb/docs-visual-studio-extension/blob/master/REVIEWING.md)
-
-JIRA - <https://jira.mongodb.org/browse/DOCSP-NNNNN>
-
-### Staging Links
-<!-- start insert-links --><!-- end insert-links -->
-
-## Self-Review Checklist
-
-- [ ] Is this free of any warnings or errors in the RST?
-- [ ] Did you run a spell-check?
-- [ ] Did you run a grammar-check?
-- [ ] Are all the links working?
-- [ ] Are the [facets and meta keywords](https://wiki.corp.mongodb.com/display/DE/Docs+Taxonomy) accurate?
+This repo is being maintained for archival reasons only.
